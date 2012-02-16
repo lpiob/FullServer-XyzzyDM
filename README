@@ -1,5 +1,172 @@
-FullServer XyzzyDM
+FullServer XyzzyDM v3.3r1000
 
-Autorzy: 
+Autorzy:
+====================================================================
+Autorzy tej wersji:
 	- Arnold "SeriouS" Fornalczyk <serious@rsah.pl>
 	- Lukasz "Wielebny" Biegaj <wielebny@bestplay.pl>
+
+Pozniejsi autorzy:
+	- Mateusz "eider" Cichon <eider@fullserver.eu>
+	- XJL <XJL@fullserver.eu>
+
+Credits:
+	- Mlody626 - autor poprzedniej wersji gamemodu FullServera, a takze kilku
+	  kodu przeniesionych do tej wersji.
+	- DracoBlue, Incognito, Y-Less, Sacky, StrickenKid, Zeex, Fro1sha
+
+
+Licencja:
+====================================================================
+
+Licencja: CC-BY-SA 3.0
+
+Pelny tekst licencji:
+http://creativecommons.org/licenses/by-sa/3.0/
+
+W skrocie:
+- mozesz uzywac tego projektu do celow komercyjnych
+- mozesz modyfikowac go, pod warunkiem dystrybucji na tej samej licencji
+- musisz zachowac informacje o dotychczasowych autorach
+
+Istnieje mozliwosc otrzymaniu kodu (najnowszej wersji) na innej licencji.
+
+
+
+Dlaczego ten kod zostal opublikowany:
+====================================================================
+
+Zrodla ktore sa dostepne, to starsza wersja gamemodu - rewizja o numerze 1000 (r1000).
+W momencie jej wydawania, biezaca wersja nosila numer r1655.
+
+Wersja r1000 zostala utworzona 2011/08/31 i wtedy tez dziala na FullServerze.
+
+Celem upublicznienia tej wersji NIE JEST ulatwienie laikom utworzenia setek
+klonow FullServera. Celem upublicznienia jest zastymulowanie rozwoju polskiej
+sceny SA:MP, a takze byc moze stworzenie podwalin pod inne gamemody stworzone
+na bazie tego.
+
+W zwiazku z tym nie jest to paczka w stylu 'wgraj i odpal', tylko zrzut z
+repozytorium, wstepnie zweryfikowany i dostarczony z pewnymi ograniczeniami
+(wymienione ponizej). Skompilowanie go nie powinno stanowic zadnego problemu
+dla osoby ktora ma o tym minimalne pojecie.
+
+
+
+
+Uwagi:
+====================================================================
+
+Wydana wersja to wersja pod 0.3c. Posiada ona jeszcze tlumaczenia zrealizowane
+w oparciu o dwa pliki tekstowe dla dwoch jezykow - w przyszlych rewizjach
+zostalo to zastapione przez biblioteke gettext.
+
+W przyszlosci, wydawane beda kolejne wersje gamemodu FullServera, ktory to jest
+w ciaglym rozwoju.
+
+
+
+
+Brakujace pliki:
+=====================================================================
+
+Dodatkowo, z wersji tej usuniete zostalo:
+	- caly panel www (http://fs.i64.pl)
+	- czesc plikow audio z katalogu audiopacks/fullserver/, zawierajacych glos Kicii,
+	  nagranych specjalnie dla FullServera
+	- kod odpowiedzialny za burdel (18+)
+	- 99% obiektow uzywane na FullServerze - nie byly nigdy one czescia kodu, oprocz
+	  3 lokalizacji znajdujacych sie w pliku objects.inc
+	- ladowarki obiektow (filterscript o nazwie objectloader)
+	- misje spedycyjne
+	- pewna czesc zabezpieczen, ktorych nie zamierzamy publicznie ujawniac
+	  (dodatkowe szyfrowanie hasel rcon itp)
+
+Braki te oczywiscie nie przeszkadzaja w uruchomieniu tego gamemoda.
+
+Wymogi:
+====================================================================
+
+Gamemod wymaga odpowiednio szybkiego hostingu i dostepu do bazy MySQL.
+W przypadku watpliwosci nad wyborem hostingu, polecamy ServerProject, dzieki
+ich profesjonalnym uslugom FullServer moze dzialac bez jakichkolwiek lagow,
+awarii i innych problemow ktore zdarzaja sie w innych hostingach.
+
+
+Kompilacja + kilka uwag:
+====================================================================
+
+System kompilacji zostal przygotowany do uruchamiania na komputerze z Linuxem,
+z kompilatorem PAWN odpalanym przez WINE.
+
+W katalogu gamemode/gamemodes/ znajduje sie skrypt make.sh, ktory dokonuje
+aktualizacji plikow z wersja gamemodu, wykonuje kompilacje gamemodu i jesli ta sie
+powiedzie, przesyla gamemod przez FTP.
+
+W przypadku posiadania srodowiska kompilacyjnego pod systemem operacyjnym Windows,
+zalecamy korzystanie z przygotowanych skryptow za pomoca srodowiska CYGWIN. 
+W przeciwnym przypadku, zawsze mozna przerobic to na .bat lub kompilowac recznie 
+
+W pliku make.sh (badz tez w generowanych pliku version.inc) nalezy zmodyfikowac
+adres IP oraz port serwera. Dane te sa weryfikowane przy starcie gamemodu, tak
+aby uniemozliwic uruchamianie 'kradzionego' amx bezposrednio na innym komputerze.
+
+Kod nie zawiera i nigdy nie zawieral zabezpieczen typu deamx. Posiada natomiast
+wbudowany mechanizm licencjonowania, ktory przy starcie gamemodu wysyla
+jedno zadanie HTTP POST pod nasz adres. Prosimy o pozostawienie tego kodu,
+pozwoli on nam sie zorientowac gdzie uruchamiany jest gamemod.
+
+W katalogu gamemode/schema/ znajduje sie struktura bazy danych, ktora nalezy wgrac
+na serwer MySQL. Konfiguracja danych MySQL znajduje sie w pliku 
+scriptfiles/FullServer/mysql.cfg. Haslo do bazy danych musi byc 'zaszyfrowane'
+algorytmem ROT13 (!!!).
+
+Haslo RCON podane w pliku server.cfg rowniez musi byc przetworzone funkcja ROT13.
+
+Hasla graczy szyfrowane sa za pomoca funkcji MD5(nick+sol+haslo), dzieki czemu
+sa nie do zlamania za pomoca tzw. rainbow tables. Sol zapisana jest na sztywno
+w pliku utility_functions.inc, w linii 926. Jesli planujesz wykorzystac ten
+gamemod jako podstawe do dalszego rozwoju, zmien sol na inna losowa wartosc,
+przed zarejestrowaniem jakiegokolwiek konta!
+
+
+Poziomy zapisane w bazie danych, w tabeli z graczami to:
+	1 - moderator
+	2 - administrator (poziom 1)
+	3 - administrator (poziom 2)
+	4 - administrator RCON
+	5 - j.w. z malym twistem
+
+Administratorzy RCON, aby sie zalogowac musza posiadac w bazie danych level rowny 4
+lub 5. Haslo zwyklego admina ustawia sie za pomocą komendy /ahaslo <haslo>, lub w
+bazie danych, w tabeli fs_config (używana jest funkcja md5 z sola).
+
+Logowanie administratorow odbywa sie poprzez wpisanie komendy /alogin <haslo><spacja>.
+Spacja jest zawsze na koncu, ale nie podaje sie jej przy ustawianiu hasla.
+
+
+
+
+Instrukcja, lista komend, i inne
+===================================================================
+
+Tak naprawde nikomu nie chcialo sie jej tworzyc - jesli ktos ma odpowiednio duzo
+wolnego czasu i chcialby udokumentowac rozne aspekty gamemodu (w tym komendy,
+rozlozenie tabel w bazie danych, zaawansowane funkcje), to zapraszamy - chetnie 
+podlinkujemy stad do odpowiedniego poradnika.
+
+
+
+Podziekowania:
+===================================================================
+
+Specjalne podziekowania dla:
+	- graczy, vipow, moderatorow i administratorow FullServera, bez ktorych nie 
+	  byloby potrzeby tworzyc tego kodu.
+
+	- ekipy SA-MP, a w szczegolnosci JernejL oraz dugi-ego.
+
+	- firmy ServerProject <http://serverproject.pl/>, dzieki ktorej profesjonalnym uslugom, FullServer
+	  istnieje i moze sie rozwijac.
+
+	- Wkurzacza.
