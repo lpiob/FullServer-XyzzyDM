@@ -1,0 +1,467 @@
+0:Jesteœ ju¿ zarejestrowany.
+1:Twój nick jest ju¿ zarejestrowany.
+2:U¿ywaj: /rejestracja <has³o>
+3:Has³o mo¿e sk³adaæ siê tylko z liter i cyfr i niektorych znakow specjalnych. Musi mieæ od 5 do 30 znaków.
+4:Podnios³eœ {b}$%i{/b}.
+5:Nieprawid³owe has³o.
+6:Konto o nazwie {b}%s{/b} zosta³o utworzone, zapamiêtaj swoje has³o: {b}%s{/b}
+7:Zosta³eœ automatycznie zalogowany, mi³ej gry!
+8:Nieznana komenda, u¿yj /komendy aby zobaczyæ pe³n¹ listê komend.
+9:Zalogowano pomyœlnie.
+10:Zbyt wiele prób logowañ, zosta³eœ wyrzucony z serwera.
+11:Wybra³eœ jêzyk Polski.
+12:{b}%s (%i){/b} dostaje dodatkowe {b}%i respektu{/b} za nastêpn¹ godzinê gry!
+13:Nie jesteœ jeszcze zarejestrowany, u¿yj {b}/rejestracja{/b} aby to zrobiæ.
+14:Nieprawid³owa wartoœæ, wprowadŸ kod koloru w systemie szesnastkowym RGB, np. 44FF2C.
+15:Kolor zosta³ zmieniony na: {%s}%s
+16:U¿ywaj: /nowynick <nowy nick>
+17:Podany nick zawiera niedozwolone znaki lub nie mieœci siê w przedziale 3-20 znaków.
+18:Twój nick zosta³ zmieniony na {b}%s{/b}. Nastêpna zmiana bêdzie mo¿liwa po 24 godzinach.
+19:{b}%s{/b} zmieni³ swój nick na {b}%s{/b}
+20:Twoje konto jest zbanowane na {b}%i %s{/b}
+21:Je¿eli uwa¿asz, ¿e admin post¹pi³ nies³usznie, mo¿esz napisaæ proœbê o odbanowanie na FullServer.eu
+22:Musisz byæ zarejestrowany, aby u¿yæ tej komendy.
+23:Musisz jeszcze odczekaæ {b}%i %s{/b} aby ponownie móc zmieniæ swój nick.
+24:Musisz byæ zespawnowany aby u¿yæ tej komendy.
+25:Podany gracz nie posiada jeszcze konta.
+26:U¿ywaj: /ban <gracz> <czas> <m/g/d/t/s> <powód>
+27:Nie znaleziono gracza o nicku lub ID "{b}%s{/b}".
+28:Znaleziono wiêcej ni¿ jednego gracza z fraz¹ "{b}%s{/b}".
+29:Nieprawid³owy trzeci parametr komendy.
+30:PodpowiedŸ: m - minuty, g - godziny, d - dni, t - tygodnie, s - miesi¹ce.
+31:Nieprawid³owa wartoœæ czasu.
+32:Twoje konto zosta³o zbanowane.
+33:minutê
+34:godzinê
+35:dzieñ
+36:tydzieñ
+37:miesi¹c
+38:minuty
+39:godziny
+40:dni
+41:tygodnie
+42:miesi¹ce
+43:minut
+44:godzin
+45:dni
+46:tygodni
+47:miesiêcy
+48:Konto {b}%s{/b} zosta³o zbanowane na {b}%i %s{/b}. Powód: {b}%s{/b}
+49:Twoje konto zosta³o zbanowane na {b}%i %s{/b} przez admina {b}%s{/b}
+50:Powód: {b}%s{/b}
+51:Witaj na FullServerze!
+52:Zaloguj siê u¿ywaj¹c swojego has³a podanego podczas rejestracji.
+53:Zaloguj
+54:WyjdŸ
+55:Zmiana nicku
+56:Ze wzglêdów bezpieczeñstwa konieczne jest ponowne podanie has³a przed zmian¹ nicka.
+57:PotwierdŸ
+58:Anuluj
+59:Zbyt wiele prób potwierdzenia has³a, zosta³eœ wyrzucony z serwera.
+60:Potwierdzenie dodania bana
+61:Zbanowaæ konto {b}%s{/b} na {b}%i %s{/b} z powodu: {b}%s{/b}
+62:Tak
+63:Nie
+64:Nie mo¿esz obserwowaæ siebie.
+65:Nie obserwujesz nikogo.
+66:{b}%s (%i){/b} wszed³ na serwer.
+67:{b}%s (%i){/b} wesz³a na serwer.
+68:{b}%s (%i){/b} wszed³ na serwer (IP: %s)
+69:{b}%s (%i){/b} wesz³a na serwer (IP: %s)
+70:{b}%s (%i){/b} opuœci³ serwer (gra³ %i %s)%s
+71:{b}%s (%i){/b} opuœci³a serwer (gra³a %i %s)%s
+72:sekundê
+73:sekundy
+74:sekund
+75:Ten gracz aktualnie obserwuje kogoœ innego.
+76:Wybierz
+77:Wróæ
+78:Zapisz
+79:WprowadŸ now¹ wartoœæ:
+80:Panel pomocy > Regulamin
+81:Panel pomocy > Respekt
+82:Panel pomocy > Gwiazdki
+83:Panel pomocy > Konta VIP
+84:Panel pomocy > O autorze
+85:Panel pomocy > Komendy
+86:Panel pomocy > Komendy > Podstawowe
+87:Panel pomocy > Komendy > Atrakcje
+88:Panel pomocy > Komendy > Zarz¹dzanie kontem
+89:Panel pomocy > Komendy > Domy
+90:Panel pomocy > Komendy > Respekt
+91:Panel pomocy > Komendy > Teleporty
+92:Panel pomocy > Komendy > Animacje
+93:Panel pomocy > Komendy > VIP
+94:Panel pomocy > Komendy > Admin
+95:Panel konfiguracyjny > Kolory graczy
+96:Panel konfiguracyjny > Kolory informacji na czacie
+97:Panel pomocy
+98:Panel konfiguracyjny
+99:Gratulacje, ukoñczy³eœ {b}/sky{/b}! Respekt +10
+100:Ta komenda jest dostêpna tylko w wybiera³ce skinów.
+101:Bêdziesz móg³ u¿yæ tej komendy po ponownym wejœciu na serwer.
+102:U¿ywaj: /skin <id skina>
+103:Nieprawid³owy identyfikator skina.
+104:Wartoœæ tej komendy musi byæ numeryczna.
+105:Wybra³eœ skina o identyfikatorze {b}%i{/b}
+106:U¿ywaj: /spec <gracz>
+107:Obserwujesz gracza {b}%s (%i){/b}
+108:Przebywaj¹c d³ugo na tym statku, dostajesz pieni¹dze.
+109:Operacje bankowe mo¿na wykonywaæ tylko przy bankomacie.
+110:Komenda dostêpna tylko dla zarejestrowanych u¿ytkowników.
+111:Bank > Stan konta
+112:Bank > Wp³ata
+113:Bank > Wyp³ata
+114:Bank > Przelew
+115:Bank > Przelew (krok 1)
+116:Bank > Przelew (krok 2)
+117:Stan Twojego konta wynosi {FFFFFF}$%i
+118:Podaj kwotê do wp³aty.
+119:Dalej
+120:Podaj kwotê do wyp³aty.
+121:Podaj nazwê konta gracza, któremu chcesz przelaæ pieni¹dze.
+122:Podana wartoœæ musi byæ numeryczna.
+123:Podana wartoœæ jest niepoprawna.
+124:Podana iloœæ pieniêdzy przekracza wartoœæ Twojego portfela.
+125:Dokonano wp³aty na konto bankowe w wysokoœci {FFFFFF}$%i
+126:Podana iloœæ pieniêdzy przekracza stan Twojego konta.
+127:Dokonano wyp³aty z konta bankowego w wysokoœci {FFFFFF}$%i
+128:Podana nazwa konta jest niepoprawna.
+129:Nie znaleziono konta gracza o nazwie {FFFFFF}%s
+130:Podaj kwotê do przelewu.
+131:{A8C2E2}Jesteœ pewien dokonania przelewu {FFFFFF}$%i{A8C2E2} na konto gracza {FFFFFF}%s{A8C2E2}?
+132:{A8C2E2}Dokonano przelewu {FFFFFF}$%i{A8C2E2} na konto gracza {FFFFFF}%s{A8C2E2}.
+133:U¿ywaj: /a <tekst>
+134:U¿ywaj: /aa <tekst>
+135:U¿ywaj: /g <tekst>
+136:U¿ywaj: /pw <gracz> <tekst>
+137:Wysy³anie prywatnych wiadomoœci do siebie jest co najmniej idiotyczne.
+138:(PW do {b}%s{/b}) %s
+139:(PW od {b}%s (%i){/b}) %s
+140:Nie spamuj! Kolejne ostrze¿enia mog¹ skoñczyæ siê wyrzuceniem z serwera.
+141:Spamowanie nie bêdzie tolerowane.
+142:Zosta³eœ wyrzucony z serwera.
+143:Prawdopodobnie usi³ujesz reklamowaæ adres IP serwera, co jest niezgodne z regulaminem.
+144:U¿ywaj: /l <tekst>
+145:Nikt Ciê nie s³yszy.
+146:Nieudana próba logowania na administratora RCON z IP: {b}%s{/b} - has³o: "{b}%s{/b}"
+147:{b}%s{/b} zalogowa³ siê na admina (poziom %i).
+148:U¿ywaj: /me <tekst>
+149:U¿ywaj: /kick <gracz> <powód>
+150:Wyrzuciæ gracza {b}%s{/b}? ({b}%s{/b})
+151:Potwierdzenie wyrzucenia gracza
+152:Gracz {b}%s{/b} zosta³ wyrzucony z serwera, powód: {b}%s{/b}
+153:Zosta³eœ wyrzucony z serwera przez admina {b}%s{/b}.
+154:Statystyki
+155:Statystyki > Twoje statystyki
+156:Statystyki > Statystyki serwera
+157:Top lista
+158:Top lista > Respekt
+159:Top lista > Fragi
+160:Top lista > Czas gry
+161:sekunda
+162:minuta
+163:godzina
+164:Minê³a 24:00, jest %i %s %i roku.
+165:stycznia
+166:lutego
+167:marca
+168:kwietnia
+169:maja
+170:czerwca
+171:lipca
+172:sierpnia
+173:wrzeœnia
+174:paŸdziernika
+175:listopada
+176:grudnia
+177:U¿ywaj: /ann <tekst>
+178:Twój ping przekracza maksymaln¹ dozwolon¹ wartoœæ ({b}400{/b}), spróbuj to naprawiæ albo zostaniesz wyrzucony!
+179:Twój ping by³ zbyt du¿y, maksymalna wartoœæ wynosi {b}400{/b}. Spróbuj to poprawiæ i wtedy wróæ na serwer.
+180:Nie znaleziono gracza/konta o nicku lub ID "{b}%s{/b}".
+181:U¿ywaj: /unban <nazwa konta>
+182:Odbanowaæ konto {b}%s{/b}?
+183:Potwierdzenie usuniêcia bana
+184:Konto {b}%s{/b} zosta³o odbanowane.
+185:U¿ywaj: /banip <gracz/adres IP> <czas> <m/g/d/t/s/*> <powód>
+186:PodpowiedŸ: w pierwszym parametrze komendy wprowadŸ adres IP (zakres lub pe³ny) albo nick/ID gracza bêd¹cego online.
+187:Zbanowaæ adres IP {b}%s{/b} na {b}%i %s{/b} z powodu: {b}%s{/b}
+188:Potwierdzenie dodania bana na IP
+189:Adres IP {b}%s{/b} zosta³ zbanowany na {b}%i %s{/b}. Powód: {b}%s{/b}
+190:Podany adres IP jest nieprawid³owy i nie znaleziono gracza o nicku lub ID "{b}%s{/b}".
+191:U¿ywaj: /unbanip <adres IP>
+192:Podany adres IP jest nieprawid³owy.
+193:Potwierdzenie usuniêcia bana na IP
+194:Odbanowaæ IP {b}%s{/b}?
+195:Adres IP {b}%s{/b} zosta³ usuniêty z listy zbanowanych.
+196:Twój adres IP jest zbanowany na {b}%i %s{/b}.
+197:Je¿eli uwa¿asz, ¿e to pomy³ka, zg³oœ to do administratora lub napisz proœbê o odbanowanie na {b}FullServer.eu{/b}
+198:Top lista graczy > Skill
+199:Top lista graczy > Pieni¹dze
+200:tak
+201:nie
+202:Szybkosc
+203:Stan
+204:Zamkniety
+205:Iloœæ tyld "~" musi byæ parzysta.
+206:Twój nick zosta³ automatycznie poprawiony na {b}[%s]%s{/b}.
+207:Twój nick jest zbyt d³ugi aby dopisaæ do niego tag Twojego gangu. Prosimy zg³osiæ ten problem do administratora.
+208:Nie nale¿ysz do gangu {b}%s{/b}, usuñ tag z nicku i wróæ na serwer.
+209:Nie nale¿ysz do gangu {b}%s{/b}, tylko do {b}%s{/b}. Zmieñ swój tag i wróæ na serwer.
+210:Wszelkie operacje na gangach s¹ dostêpne na stronie XXX.
+211:U¿ywaj: /wiez <gracz> <czas w minutach> <powód>
+212:Wartoœæ czasu musi siê mieœciæ w przedziale 1 - 8.
+213:Gracz {b}%s{/b} zosta³ zamkniêty w wiêzeniu na {b}%i %s{/b} z powodu: {b}%s{/b}
+214:Zosta³eœ zamkniêty w wiêzieniu na {b}%i %s{/b} przez admina {b}%s{/b}
+215:U¿ywaj: /unwiez <gracz>
+216:Gracz {b}%s{/b} zosta³ usuniêty z wiêzienia.
+217:Zosta³eœ usuniêty z wiêzienia przez admina {b}%s{/b}
+218:Podany gracz nie jest w wiêzieniu.
+219:Ta komenda jest teraz niedostêpna.
+220:~n~~n~~n~~n~~n~~y~Pozostalo: ~w~%i %s
+221:Ten gracz jest aktualnie w wiêzieniu.
+222:CK/DB/HK/zabijanie w strefie {b}bez DM{b} jest zakazane, siedzisz {b}5 minut{/b}...
+223:Tak szybko nie uciekniesz.
+224:Komenda dzia³a tylko w pojeŸdzie.
+225:Pojazd zosta³ zamkniêty.
+226:Pojazd zosta³ otwarty.
+227:Ten pojazd jest ju¿ zamkniêty.
+228:Ten pojazd jest ju¿ otwarty.
+229:Odsiedzia³eœ swoj¹ karê, jesteœ wolny.
+230: (crash/timeout)
+231:Gracz {b}%s{/b} zosta³ zbanowany przez admina {b}%s{/b} z powodu: {b}%s{/b}
+232:Gracz {b}%s{/b} zosta³ wyrzucony z serwera przez admina {b}%s{/b} z powodu: {b}%s{/b}
+233:Statystyki > Gangi
+234:Pe³na nazwa
+235:Tag
+236:W³aœciciel
+237:Respekt
+238:Data za³o¿enia
+239:Statystyki > Gangi > %s
+240:Top lista > Gangi
+241:{b}%s{/b} zalogowa³ siê na moderatora.
+242:U¿ywaj: /m <tekst>
+243:U¿ywaj: /mute <gracz> <czas w minutach> <powód>
+244:Ten gracz jest ju¿ wyciszony.
+245:Gracz {b}%s{/b} zosta³ wyciszony na {b}%i %s{/b} z powodu: {b}%s{/b}
+246:Zosta³eœ wyciszony na {b}%i %s{/b} przez admina {b}%s{/b}
+247:U¿ywaj: /unmute <gracz>
+248:Podany gracz nie jest wyciszony.
+249:Wyciszenie gracza {b}%s{/b} zosta³o wy³¹czone.
+250:Twoje wyciszenie zosta³o wy³¹czone przez admina {b}%s{/b}
+251:Zosta³eœ uciszony, nie mo¿esz pisaæ na g³ównym czacie przez jeszcze {b}%i %s{/b}.
+252:Jesteœ ju¿ w kolejce na {b}chowanego{/b}.
+253:Jesteœ ju¿ w kolejce na {b}SPS{/b}.
+254:Jesteœ ju¿ w kolejce na {b}derby{/b}.
+255:Jesteœ ju¿ w kolejce na {b}labirynt{/b}.
+256:Jesteœ ju¿ w kolejce na {b}race{/b}.
+257:Jesteœ ju¿ w kolejce na {b}skoki{/b}.
+258:Jesteœ ju¿ w kolejce na {b}WG (wojnê gangów){/b}.
+259:Jesteœ ju¿ w kolejce na {b}strzelnicê{/b}.
+260:Zapisa³eœ siê do kolejki na {b}chowanego{/b}.
+261:Zapisa³eœ siê do kolejki na {b}SPS (skakanie po sianie){/b}.
+262:Zapisa³eœ siê do kolejki na {b}derby{/b}.
+263:Zapisa³eœ siê do kolejki na {b}labirynt{/b}.
+264:Zapisa³eœ siê do kolejki na {b}race{/b}.
+265:Zapisa³eœ siê do kolejki na {b}skoki{/b}.
+266:Zapisa³eœ siê do kolejki na {b}WG (wojnê gangów){/b}.
+267:Zapisa³eœ siê do kolejki na {b}strzelnicê{/b}.
+268:{b}%s{/b} rozpocznie siê za {b}%i sekund{/b}.
+269:Brak dostatecznej liczby graczy na {b}chowanego{/b}, zapisy ponowione.
+270:Brak dostatecznej liczby graczy na {b}SPS{/b}, zapisy ponowione.
+271:Brak dostatecznej liczby graczy na {b}derby{/b}, zapisy ponowione.
+272:Brak dostatecznej liczby graczy na {b}labirynt{/b}, zapisy ponowione.
+273:Brak dostatecznej liczby graczy na {b}race{/b}, zapisy ponowione.
+274:Brak dostatecznej liczby graczy na {b}skoki{/b}, zapisy ponowione.
+275:Brak dostatecznej liczby graczy na {b}WG{/b}, zapisy ponowione.
+276:Brak dostatecznej liczby graczy na {b}strzelnicê{/b}, zapisy ponowione.
+277:{b}Chowany{/b} wystartowa³! Zapisy na nastêpn¹ kolejkê rozpoczête.
+278:{b}SPS{/b} wystartowa³o! Zapisy na nastêpn¹ kolejkê rozpoczête.
+279:{b}Derby{/b} wystartowa³o! Zapisy na nastêpn¹ kolejkê rozpoczête.
+280:{b}Labirynt{/b} wystartowa³! Zapisy na nastêpn¹ kolejkê rozpoczête.
+281:{b}Race{/b} wystartowa³o! Zapisy na nastêpn¹ kolejkê rozpoczête.
+282:{b}Skoki{/b} wystartowa³y! Zapisy na nastêpn¹ kolejkê rozpoczête.
+283:{b}WG{/b} wystartowa³o! Zapisy na nastêpn¹ kolejkê rozpoczête.
+284:{b}Strzelnica{/b} wystartowa³a! Zapisy na nastêpn¹ kolejkê rozpoczête.
+285:Jesteœ nieosi¹ganlny w tej chwili i zosta³eœ usuniêty z kolejki na t¹ atrakcje.
+286:Nie.
+287:{b}Strzelnica{/b} zosta³a przerwana z powodu braku graczy.
+288:{b}%s{/b} wygrywa strzelnicê!
+289:Wygrywasz {b}strzelnicê{/b}! Respekt +10
+290:U¿ywaj: /zlecenie <gracz> <nagroda: kwota>
+291:Wartoœæ pieniêdzy musi siê mieœciæ w przedziale 1 - 1000000.
+292:Nowa nagroda za zabójstwo gracza {b}%s{/b} - {b}$%i{/b} (wystawione przez {b}%s{/b})
+293:Stawka za zabójstwo gracza {b}%s{/b} zwiêkszona przez {b}%s{/b} z {b}$%i{/b} do {b}$%i{/b}!
+294:{b}%s{/b} zdoby³ g³owê gracza {b}%s{/b} - nagroda: {b}$%i{/b}!
+295:U¿ywaj: /dajkase <gracz> <kwota>
+296:Jesteœ za daleko od tego gracza.
+297:Przekaza³eœ graczowi {b}%s $%i{/b}.
+298:{b}%s{/b} przekaza³ Ci {b}$%i{/b}.
+299:{FFFFFF}%s{C6E0FF} podniós³ {FFFFFF}artefakt{C6E0FF}!
+300:{FFFFFF}%s{C6E0FF} zgubi³ {FFFFFF}artefakt{C6E0FF}!
+301:Po³o¿enie {b}artefaktu{/b} zosta³o zresetowane przez admina.
+302:Ustawienia zosta³y ponownie za³adowane.
+303:Chcesz kupiæ ten dom? OdwiedŸ {b}http://fullserver.eu/domy/%i{/b} aby uzyskaæ dalsze informacje.
+304:Ten dom jest zamkniêty.
+305:Witaj w domu gracza {b}%s{/b}.
+306:Musisz byæ przy drzwiach domu.
+307:Musisz byæ wewn¹trz domu.
+308:Nie jesteœ w³aœcicielem tego domu.
+309:Dom zosta³ zamkniêty.
+310:Dom zosta³ otwarty.
+311:Ten dom jest ju¿ zakmniêty.
+312:Ten dom jest ju¿ otwarty.
+313:Twój dom jest w stanie zawieszonym. Prosimy zap³aciæ czynsz, w przeciwnym razie zostanie oddany ponownie na sprzeda¿.
+314:Ten dom zosta³ zawieszony i jest teraz zamkniêty.
+315:Musisz byæ w pobli¿u ikony jakiegoœ domu.
+316:Ogl¹dasz dom numer {b}%i{/b}. Wciœnij dowolny klawisz aby zakoñczyæ.
+317:W³aœciciel tego domu zamkn¹³ drzwi, nie mo¿na go ogl¹daæ.
+318:Witaj w swoim domu, {b}%s{/b}.
+319:Musisz byæ w pobli¿u ikony swojego domu.
+320:Twój samochód wróci³ przed dom.
+321:Zmiana samochodu
+322:Pojazd zosta³ zmieniony na {b}%s (%i){/b}.
+323:Zmiana koloru samochodu
+324:Kolor pojazdu zosta³ zmieniony na {%s}kolor %i
+325:Teleportowa³eœ siê do swojego domu.
+326:Teleportowa³es siê do jednego ze swoich domów.
+327:Nie posiadasz ¿adnych domów.
+328:~y~Twoj Dom
+329:Zmiana ustawieñ HUD-u
+330:Zmieñ
+331:Element {b}%s{/b} zosta³ w³¹czony.
+332:Element {b}%s{/b} zosta³ wy³¹czony.
+333:Podany nick jest ju¿ zarezerwowany przez innego gracza, musisz wybraæ inny.
+334:Panel konfiguracyjny > Maksymalny ping
+335:Wartoœæ maksymalnego pingu musi siê mieœciæ w przedziale 50 - 9999.
+336:Maksymalny dozwolony ping zosta³ zmieniony na {b}%i{/b}.
+337:Panel konfiguracyjny > Atrakcje
+338:Panel konfiguracyjny > Atrakcje > %s
+339:Panel konfiguracyjny > Atrakcje > %s > Nazwa
+340:Panel konfiguracyjny > Atrakcje > %s > Wielkoœæ kolejki
+341:Panel konfiguracyjny > Atrakcje > %s > Czas startowania
+342:D³ugoœæ nazwy musi siê mieœciæ w przedziale 1 - 14.
+343:Nazwa atrakcji zosta³a zmieniona na {b}%s{/b}.
+344:Wielkoœæ kolejki dla tej atrakcji nie mo¿e byæ mniejsza od %i i wiêksza ni¿ %i.
+345:Wielkoœæ kolejki {b}%s{/b} zosta³a zmieniona na {b}%i{/b}.
+346:Czas startu {b}%s{/b} zosta³ zmieniony na {b}%i sekund{/b}.
+347:Wartoœæ czasu musi siê mieœciæ w przedziale 1 - 120 (sekund).
+348:Nazwa atrakcji nie mo¿e zawieraæ spacji.
+349:Zmiana has³a
+350:Ze wzglêdów bezpieczeñstwa konieczne jest ponowne podanie aktualnego has³a.
+351:Twoje has³o zosta³o zmienione na "{b}%s{/b}". Dobrze je zapamiêtaj!
+352:U¿ywaj: /zmienhaslo <nowe has³o>
+353:Podczas ostatniego pobytu w wiêzieniu uciek³eœ z serwera, musisz odsiedzieæ pozosta³y czas.
+354:U¿ywaj: /tt <gracz>
+355:Teleportowa³eœ siê do gracza {b}%s{/b}.
+356:Admin {b}%s{/b} teleportowa³ siê do Twojej pozycji.
+357:U¿ywaj: /th <gracz>
+358:Teleportowa³eœ gracza {b}%s{/b} do siebie.
+359:Admin {b}%s{/b} teleportowa³ Ciê do swojej pozycji.
+360:U¿ywaj: /tp <gracz 1> <gracz 2>
+361:Teleportowa³eœ gracza {b}%s{/b} do pozycji gracza {b}%s{/b}.
+362:Admin {b}%s{/b} teleportowa³ Ciê do pozycji gracza {b}%s{/b}.
+363:Admin {b}%s{/b} teleportowa³ gracza {b}%s{/b} do Twojej pozycji.
+364:U¿ywaj: /kill <gracz>
+365:Zabi³eœ gracza {b}%s{/b}.
+366:Zosta³eœ zabity przez admina {b}%s{/b}.
+367:U¿ywaj: /freeze <gracz>
+368:Zamrozi³eœ gracza {b}%s{/b}.
+369:Zosta³eœ zamro¿ony przez admina {b}%s{/b}.
+370:U¿ywaj: /unfreeze <gracz>
+371:Odmrozi³eœ gracza {b}%s{/b}.
+372:Zosta³eœ odmro¿ony przez admina {b}%s{/b}.
+373:U¿ywaj: /disarm <gracz>
+374:Rozbroi³eœ gracza {b}%s{/b}.
+375:Zosta³eœ rozbrojony przez admina {b}%s{/b}.
+376:Nie mo¿na teraz teleportowaæ tego gracza.
+377:Nie mo¿na teraz teleportowaæ gracza numer 1.
+378:Nie mo¿na teraz teleportowaæ gracza numer 2.
+379:Podany gracz nie jest zespawnowany.
+380:U¿ywaj: /remove <gracz>
+381:Podany gracz nie jest w ¿adnym pojeŸdzie.
+382:Wyrzuci³eœ gracza {b}%s{/b} z pojazdu.
+383:Admin {b}%s{/b} wyrzuci³ Ciê z pojazdu.
+384:Czat zosta³ wyczyszczony przez admina {b}%s{/b}.
+385:Gracz 1 musi byæ inny od gracza 2.
+386:Panel konfiguracyjny > Cenzura s³ów
+387:Panel konfiguracyjny > Cenzura s³ów > Lista s³ów
+388:Panel konfiguracyjny > Cenzura s³ów > Dodaj nowe s³owo
+389:Panel konfiguracyjny > Cenzura s³ów > Usuñ s³owo
+390:Cenzura s³ów zosta³a w³¹czona.
+391:Cenzura s³ów zosta³a wy³¹czona.
+392:(Brak s³ów)
+393:Podaj nowe s³owo:
+394:Brak s³ów na liœcie.
+395:Podane s³owo jest niedozwolone.
+396:S³owo {b}%s{/b} zosta³o dodane do listy s³ów cenzurowanych.
+397:S³owo {b}%s{/b} zosta³o usuniête z listy s³ów cenzurowanych.
+398:Podane s³owo jest ju¿ na liœcie s³ów cenzurowanych.
+399:Tekst jest zbyt d³ugi.
+400:Kolorowanie tekstu zosta³o w³¹czone.
+401:Kolorowanie tekstu zosta³o wy³¹czone.
+402:U¿ywaj: /raport <gracz> <powód>
+403:{b}%s{/b} wys³a³ raport o graczu {b}%s{/b}, powód: %s
+404:Wys³a³eœ adminom raport o graczu {b}%s{/b}, powód: %s
+405:D³ugoœæ raportu nie mo¿e przekraczaæ 50 znaków.
+406:Raporty
+407:Niedawno raportowa³eœ tego gracza, musisz odczekaæ trochê czasu.
+408:(brak raportów)
+409:Spec
+410:Usuñ
+411:Nie mo¿esz w tym momencie obserwowaæ graczy.
+412:Gracz {b}%s{/b} zosta³ usuniêty z listy raportów.
+413:U¿ywaj: /vsay <tekst>
+414:Musisz posiadaæ konto VIP aby u¿ywaæ tej komendy.
+415:U¿ywaj: /v <tekst>
+416:*ukryty*
+417:{b}Moderatorzy:{/b}
+418:{b}Admini (poziom 1):{/b}
+419:{b}Admini (poziom 2):{/b}
+420:{b}Admini (poziom 3):{/b}
+421:brak
+422:Gracze VIP:
+423:Kolejka jest pe³na.
+424:{b}Labirynt{/b} zosta³ przerwany z powodu braku graczy.
+425:{b}%s{/b} wygrywa labirynt!
+426:Wygrywasz {b}labirynt{/b}! Respekt +5
+427:{b}Labirynt{/b} zosta³ przerwany z powodu limitu czasu na ukoñczenie.
+428:{b}Strzelnica{/b} zosta³a przerwana z powodu limitu czasu na ukoñczenie.
+429:{b}Wojna Gangów{/b} zosta³a przerwana z powodu braku graczy.
+430:{b}Wojna Gangów{/b} zosta³a przerwana z powodu limitu czasu na ukoñczenie.
+431:Zieloni wygrywaj¹ {b}wojnê gangów{/b}!
+432:Niebiescy wygrywaj¹ {b}wojnê gangów{/b}!
+433:Twoja dru¿yna wygrywa {b}wojnê gangów{/b}!
+434:Schowaj sie!~n~Start za %i sekund!
+435:Start za %i sekund!~n~Przygotuj sie,~n~jestes szukajacym.
+436:Pozostalo %i graczy do odnalezienia.~n~Szukajacych: %i
+437:Szukam!
+438:{b}Chowany{/b} zosta³ przerwany z powodu limitu czasu na ukoñczenie.
+439:{b}%s{/b} znalaz³ gracza {b}%s{/b}.
+440:Znajdujesz siê poza terenem chowanego, zosta³eœ wykluczony z zabawy.
+441:{b}Chowany{/b} zosta³ przerwany z powodu braku graczy szukajcych.
+442:{b}Chowany{/b} zosta³ przerwany z powodu braku graczy chowaj¹cych.
+443:{b}%s{/b} wygrywa chowanego!
+444:Wygrywasz {b}chowanego{/b}! Respekt +10
+445:otwarty
+446:zamkniety
+447:{b}Derby{/b} zostaly przerwane z powodu limitu czasu na ukonczenie.
+448:Obecnie nie ma zadnej walizki do znalezienia.
+449:Obecnie nie ma zadnego prezentu do odnalezienia.
+450:Do Twojego pojazdu zamontowane zostalo NITRO. Tryb chwilowy dostepny pod klawiszem {b}ALT{/b}, ciagly pod {b}CTRL{/b}.
+451:Musisz byc w pojezdzie, aby to zrobic.
+452:Nie mozna zapisac teleportu w tej lokacji.
+453:Lokalizacja zapisana i dostepna pod komenda {b}/telpos{/b}.
+454:Nie mozesz teraz tego zrobic!
+455:Pojazd nie wymaga naprawy.
+456:Nie stac Cie na to!
+457:Pojazd naprawiony.
+458:Obecnie nie trwa zadne glosowanie.
+459:Oddales/-as juz swoj glos.
+460:Glosowanie zostalo przerwane przez administratora.
+461:Atrakcja jest obecnie wylaczona.
+462:Obecnie nie ma zadnej podkowy do odnalezienia.
+463:{b}%s{/b} otrzymal/-a ostrzezenie od administratora: {b}%s{/b}
+464:Twoje ostrzezenie zostalo wycofane.
+465:Nie stosuje sie do ostrzezen administratorow.
+466:Zarejestruj sie, aby osiagnac dostep do wszystkich funkcji gry. Wpisz {b}/rejestracja{/b}.

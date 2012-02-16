@@ -1,0 +1,468 @@
+0:You are already registered.
+1:Your nickname is already registered.
+2:Usage: /register <password>
+3:The password must contain letters, numbers,and limited set of special characters only. It must be at least 5 characters long
+4:You took {b}$%i{/b}.
+5:Incorrect password.
+6:Account {b}%s{/b} has been created, remember your password: {b}%s{/b}
+7:You have been automatically logged in, have fun playing!
+8:Unknown command, use /cmd for the full command list.
+9:You have been successfully logged in, have fun playing!
+10:Too many login attemps, you have been kicked from the server.
+11:You have selected English language.
+12:{b}%s (%i){/b} is getting extra {b}%i respect{/b} for the next hour of playing!
+13:You aren't registered yet, use {b}/register{/b} to make an account.
+14:Incorrect value, you must enter a HEX RGB color code, e.g.: 44FF2C.
+15:The color has been changed to: {%s}%s{/b}
+16:Usage: /newnick <new nick>
+17:The given nickname contains forbidden characters or is not enough/too long.
+18:Your nickname has been changed to {b}%s{/b}. Next change will be possible after 24 hours.
+19:{b}%s{/b} is now known as {b}%s{/b}
+20:Your account has been banned for {b}%i %s{/b}.
+21:You can post an unban-request on FullServer.eu if you want to appeal that ban.
+22:You must be logged in before you can use this command.
+23:Next nick change will be possible after {b}%i %s{/b}.
+24:You must be spawned to use this command.
+25:This player doesn't have an account yet.
+26:Usage: /ban <player> <time> <m/g/d/t/s> <reason>
+27:Player with nickname or ID "{b}%s{/b}" has been not found.
+28:Found multiple players with "{b}%s{/b}" in their nickname.
+29:The third parameter is not correct.
+30:Hint: m - minutes, g - hours, d - days, t - weeks, s - months
+31:Incorrect time value.
+32:Your account has been banned.
+33:minute
+34:hour
+35:day
+36:week
+37:month
+38:minutes
+39:hours
+40:days
+41:weeks
+42:months
+43:minutes
+44:hours
+45:days
+46:weeks
+47:months
+48:Account {b}%s{/b} has been banned for {b}%i %s{/b} with reason: {b}%s{/b}
+49:Your account has been banned for {b}%i %s{/b} by admin {b}%s{/b}.
+50:Reason: {b}%s{/b}
+51:Welcome to the FullServer!
+52:Please log into your account using the password you choose during the registration.
+53:Login
+54:Quit
+55:I want to change my nickname
+56:For security reasons, you must re-enter your password before changing the nickname is possible.
+57:Confirm
+58:Cancel
+59:Too many password check attemps, you have been kicked from the server.
+60:Confirm new ban
+61:Ban account {b}%s{/b} for {b}%i %s{/b} with reason: {b}%s{/b}
+62:Yes
+63:No
+64:You can't spectate yourself.
+65:You aren't spectating anyone.
+66:{b}%s (%i){/b} has joined the server.
+67:{b}%s (%i){/b} has joined the server.
+68:{b}%s (%i){/b} has joined the server (IP: %s)
+69:{b}%s (%i){/b} has joined the server (IP: %s)
+70:{b}%s (%i){/b} has left the server (played %i %s)%s
+71:{b}%s (%i){/b} has left the server (played %i %s)%s
+72:second
+73:seconds
+74:seconds
+75:This player is spectating someone else.
+76:Select
+77:Back
+78:Save
+79:Enter new value:
+80:Help panel > Rules
+81:Help panel > Respect
+82:Help panel > Stars
+83:Help panel > VIP accounts
+84:Help panel > About the author
+85:Help panel > Commands
+86:Help panel > Commands > General
+87:Help panel > Commands > Attractions
+88:Help panel > Commands > Account management
+89:Help panel > Commands > Houses
+90:Help panel > Commands > Respect
+91:Help panel > Commands > Teleports
+92:Help panel > Commands > Animations
+93:Help panel > Commands > VIP
+94:Help panel > Commands > Admin
+95:Configuration panel > Player colours
+96:Configuration panel > Chat notification colours
+97:Help panel
+98:Configuration panel
+99:Contragulations, you just have finished {b}/sky{/b}! Respect +10
+100:This command is available when you join the server only.
+101:You will be able to use this command after next join.
+102:Usage: /skin <skin id>
+103:Incorrect skin ID.
+104:You must enter a numeric value for this command.
+105:You have selected skin with ID {b}%i{/b}.
+106:Usage: /spec <player>
+107:You are now spectating player {b}%s (%i){/b}.
+108:If you keep staying on this boat, you'll start getting money.
+109:You can only use bank commands being close to the ATM.
+110:You must be registered before you can use this command.
+111:Bank > Balance
+112:Bank > Deposit
+113:Bank > Withdraw
+114:Bank > Transfer
+115:Bank > Transfer (step 1)
+116:Bank > Transfer (step 2)
+117:Your account balance: {b}$%i{/b}
+118:Enter amount to deposit.
+119:Continue
+120:Enter amount to withdraw.
+121:Enter name of player who you want to transfer the money.
+122:The given value must be numeric.
+123:The given value is incorrect.
+124:The given amount exceeds your wallet's money balance.
+125:You have deposited {b}$%i{/b} into your bank account.
+126:The given amount exceeds your bank account balance.
+127:You have withdrawed {b}$%i{/b} from your bank account.
+128:The given account name is incorrect.
+129:Player account "{b}%s{/b}" has been not found.
+130:Enter amount for the transfer.
+131:Are you sure you want to transfer {b}$%i{/b} to player {b}%s{/b}?
+132:You have transfered {b}$%i{/b} to player {b}%s's{/b} account.
+133:Usage: /a <message>
+134:Usage: /aa <message>
+135:Usage: /g <message>
+136:Usage: /pm <player> <message>
+137:Sending a private message to yourself is pretty weird.
+138:(PM to {b}%s{/b}) %s
+139:(PM from {b}%s (%i){/b}) %s
+140:Do not spam! Further warnings may result in kick you from the server.
+141:Spamming will not be tolerated.
+142:You have been kicked from the server.
+143:You're probably trying to advertise a server IP address what is inconsistent with the rules.
+144:Usage: /l <text>
+145:No one hear you.
+146:Failed RCON login by IP: {b}%s{/b} - using password: {b}%s{/b}
+147:{b}%s{/b} has logged in as admin (level %i).
+148:Usage: /me <text>
+149:Usage: /kick <player> <reason>
+150:Kick player {b}%s{/b}? ({b}%s{/b})
+151:Confirm kick
+152:Player {b}%s{/b} has been kicked from the server because of: {b}%s{/b}
+153:You have been kicked from the server by admin {b}%s{/b}.
+154:Statistics
+155:Statistics > Your satistics
+156:Statistics > Server statistics
+157:Top players list
+158:Top players list > Respect
+159:Top players list > Kills
+160:Top players list > Time played
+161:second
+162:minute
+163:hour
+164:24:00 passed, now is %i %s %i year.
+165:january
+166:february
+167:march
+168:april
+169:may
+170:june
+171:july
+172:august
+173:september
+174:october
+175:november
+176:december
+177:Usage: /ann <text>
+178:Your ping is too high, please try to make it lower (<250) or you'll be kicked from the server!
+179:Sorry, your ping is too high, please try to make it lower (<250), then you can back to the server.
+180:Player/account with name "{b}%s{/b}" has been not found.
+181:Usage: /unban <account name>
+182:Unban account {b}%s{/b}?
+183:Confirm delete account ban
+184:Account {b}%s{/b} has been unbanned.
+185:Usage: /banip <player/IP address> <time> <m/g/d/t/s/*> <reason>
+186:Hint: enter an IP address (full or range) or player name/ID (if online) into the first parameter
+187:Ban IP address {b}%s{/b} for {b}%i %s{/b} with reason: {b}%s{/b}
+188:Confirm new IP ban
+189:IP address {b}%s{/b} has been banned for {b}%i %s{/b} with reason: {b}%s{/b}
+190:The given IP address is incorrect and no players has been found with ID/name "{b}%s{/b}".
+191:Usage: /unbanip <IP address>
+192:The given IP address is incorrect.
+193:Confirm IP ban delete
+194:Unban IP {b}%s{/b}?
+195:IP {b}%s{/b} has been unbanned.
+196:Your IP address is listed on the banned list (expires %i %s).
+197:If you think it's a mistake, you should contact the server admin or post an un-ban request at {b}FullServer.eu{/b}
+198:Top players list > Skill
+199:Top players list > Money
+200:yes
+201:no
+202:Speed
+203:Health
+204:Closed
+205:The number of tildies "~" must be even.
+206:Your nickname has been automatucally corrected to {b}[%s]%s{/b}.
+207:Your nickname is too long to add your gang tag. Please contact the admin to fix this problem.
+208:You aren't in gang {b}%s{/b}, please delete your gang from your nickname.
+209:You aren't in gang {b}%s{/b}, but in {b}%s{/b}. Please fix your nickname.
+210:All gang stuff are available at XXX.
+211:Usage: /jail <player> <time in minutes> <reason>
+212:The time value must be between 1 - 8.
+213:Player {b}%s{/b} has been jailed for {b}%i %s{/b}.
+214:You have been jailed for {b}%i %s{/b} by admin {b}%s{/b}.
+215:Usage: /unjail <player>
+216:Player {b}%s{/b} has been unjailed.
+217:You have been unjailed by admin {b}%s{/b}.
+218:The given player isn't jailed.
+219:This command isn't available at now.
+220:~n~~n~~n~~n~~n~~y~Time left: ~w~%i %s
+221:This player is already jailed.
+222:CK/DB/HK/killing in No-DM zone is forbidden, jailed for {b}5 minutes{/b}...^
+223:Go back, sucka.
+224:You have to inside a vehicle to do that.
+225:Your vehicle has been locked.
+226:Your vehicle has been unlocked.
+227:Your vehicle is already closed.
+228:Your vehicle is already opened.
+229:Your punishment is over, you're free.
+230: (crash/timeout)
+231:Player {b}%s{/b} has been banned by admin {b}%s{/b} because of: {b}%s{/b}
+232:Player {b}%s{/b} has been kicked from the server because of: {b}%s{/b}
+233:Statistics > Gangs
+234:Full name
+235:Tag
+236:Owner
+237:Respect
+238:Created
+239:Statistics > Gangs > %s
+240:Top players list > Gangs
+241:{b}%s{/b} has logged in as game moderator.
+242:Usage: /m <text>
+243:Usage: /mute <player> <time in minutes> <reason>
+244:This player is already muted.
+245:Player {b}%s{/b} has been muted for {b}%i %s{/b} because of: {b}%s{/b}
+246:You have been muted by admin {b}%s{/b} for {b}%i %s{/b}.
+247:Usage: /unmute <player>
+248:The given player isn't muted yet.
+249:Player {b}%s{/b} has been unmuted.
+250:You have been unmuted by admin {b}%s{/b}.
+251:You are muted, the global chat is off for even {b}%i %s{/b}.
+252:You are already in the {b}chowany{/b} queue.
+253:You are already in the {b}CTF (capture the flag){/b} queue.
+254:You are already in the {b}derby{/b} queue.
+255:You are already in the {b}labirynt{/b} queue.
+256:You are already in the {b}race{/b} queue.
+257:You are already in the {b}skoki{/b} queue.
+258:You are already in the {b}WG (gang war){/b} queue.
+259:You are already in the {b}strzelnica{/b} queue.
+260:You have joined the {b}chowany{/b} queue.
+261:You have joined the {b}CTF (capture the flag){/b} queue.
+262:You have joined the {b}derby{/b} queue.
+263:You have joined the {b}labirynt{/b} queue.
+264:You have joined the {b}race{/b} queue.
+265:You have joined the {b}skoki{/b} queue.
+266:You have joined the {b}WG (gang war){/b} queue.
+267:You have joined the {b}strzelnica{/b} queue.
+268:{b}%s{/b} will start in {b}%i seconds{/b}.
+269:There is no enough players to start the {b}chowany{/b}, the queue is still opened.
+270:There is no enough players to start the {b}CTF{/b}, the queue is still opened.
+271:There is no enough players to start the {b}derby{/b}, the queue is still opened.
+272:There is no enough players to start the {b}labirynt{/b}, the queue is still opened.
+273:There is no enough players to start the {b}race{/b}, the queue is still opened.
+274:There is no enough players to start the {b}skoki{/b}, the queue is still opened.
+275:There is no enough players to start the {b}WG{/b}, the queue is still opened.
+276:There is no enough players to start the {b}strzelnica{/b}, the queue is still opened.
+277:{b}Chowany{/b} has started! You can now join to the next queue.
+278:{b}CTF{/b} has started! Zapisy na nastêpn¹ kolejkê rozpoczête.
+279:{b}Derby{/b} has started! Zapisy na nastêpn¹ kolejkê rozpoczête.
+280:{b}Labirynt{/b} has started! Zapisy na nastêpn¹ kolejkê rozpoczête.
+281:{b}Race{/b} has started! Zapisy na nastêpn¹ kolejkê rozpoczête.
+282:{b}Skoki{/b} has started! Zapisy na nastêpn¹ kolejkê rozpoczête.
+283:{b}WG{/b} has started! Zapisy na nastêpn¹ kolejkê rozpoczête.
+284:{b}Strzelnica{/b} has started! Zapisy na nastêpn¹ kolejkê rozpoczête.
+285:You are unable to participate the attraction and you've been removed from the queue.
+286:No.
+287:{b}Strzelnica{/b} has been ended because there is no enough players to continue it.
+288:{b}%s{/b} wins the {b}strzelnica{/b}!
+289:You have won the {b}strzelnica{/b}! Respect +10
+290:Usage: /hitman <player> <prize amount>
+291:The money value must be between 1 - 1000000.
+292:Kill {b}%s{/b} for {b}$%i{/b} (by {b}%s{/b})
+293:Player {b}%s's{/b} head prize has been raised by {b}%s{/b} from {b}$%i{/b} to {b}$%i{/b}!
+294:{b}%s{/b} has been terminated by {b}%s{/b} - prize: {b}$%i{/b}!
+295:Usage: /givecash <player> <amount>
+296:You are too away from this player.
+297:You gave {b}%s{/b} {b}$%i{/b}.
+298:{b}%s{/b} gave you {b}$%i{/b}.
+299:{FFFFFF}%s{C6E0FF} has picked up the {FFFFFF}artefact{C6E0FF}!
+300:{FFFFFF}%s{C6E0FF} has dropped the {FFFFFF}artefact{C6E0FF}!
+301:The {b}artefact{/b} position has been reset by admin.
+302:Config has been reloaded.
+303:Do you want to purchase this house? Visit {b}http://fullserver.eu/domy/%i{/b} to see what to do.
+304:This house is locked.
+305:Welcome to the {b}%s's{/b} house.
+306:You have to be close to the house's door.
+307:You have to be inside the house.
+308:You aren't an owner of this house.
+309:Your house has been locked.
+310:Your house has been unlocked.
+311:Your house is already locked.
+312:Your house is already opened.
+313:Your house is suspended. Please make a pay for the rent before your house will be sold.
+314:This house is suspended and has been locked.
+315:You have to be in the house's pickup.
+316:You are previewing house {b}%i{/b}. Press any key when you're done.
+317:An owner of this house has locked the door, previewing isn't possible right now.
+318:Welcome to your house, {b}%s{/b}.
+319:You have to be close to the house's pickup.
+320:Your vehicle has been respawned.
+321:Change your vehicle
+322:Your vehicle has been changed to {b}%s (%i){/b}.
+323:Change your vehicle colour
+324:Your vehicle's colour has been changed to {%s}colour %i
+325:You have been teleported to your house.
+326:You have been teleported to one of your houses.
+327:You haven't any houses yet.
+328:~y~Your House
+329:HUD settings
+330:Change
+331:HUD element {b}%s{/b} has been enabled.
+332:HUD element {b}%s{/b} has been disabled.
+333:The given nickname is already choosen, please choose another one.
+334:Configuration panel > Maximum ping
+335:The maximum ping value must be between 50 - 9999.
+336:Maximum allowed ping has been changed to {b}%i{/b}.
+337:Configuration panel > Attractions
+338:Configuration panel > Attractions > %s
+339:Configuration panel > Attractions > %s > Name
+340:Configuration panel > Attractions > %s > Queue size
+341:Configuration panel > Attractions > %s > Starting time
+342:The length of this attraction name must be between 1 - 14 characters.
+343:Attraction name has been changed to {b}%s{/b}.
+344:The queue size can't be smaller than 1 and larger than the maximum server slot value.
+345:Queue size of attraction {b}%s{/b} has been changed to {b}%i{/b}.
+346:Starting time of attraction {b}%s{/b} has been changed to {b}%i seconds{/b}.
+347:The time value must be between 1 - 120 (seconds).
+348:The name of this attraction can't contain any space characters.
+349:Change your password
+350:For security reasons, you must re-enter your password before changing the password is possible.
+351:Your password has been changed to "{b}%s{/b}". Remember that!
+352:Usage: /newpassword <new password>
+353:Last time, you have escaped from the server while beeing jailed, no way.
+354:Usage: /tt <player>
+355:You have teleported to player {b}%s{/b}.
+356:Admin {b}%s{/b} has teleported to your position.
+357:Usage: /th <player>
+358:You have teleported {b}%s{/b} to your position.
+359:Admin {b}%s{/b} has teleported you to his position.
+360:Usage: /tp <player 1> <player 2>
+361:You have teleported {b}%s{/b} to player {b}%s{/b}.
+362:Admin {b}%s{/b} has teleported you to player {b}%s{/b}.
+363:Admin {b}%s{/b} has teleported {b}%s{/b} to your position.
+364:Usage: /kill <player>
+365:You have killed {b}%s{/b}.
+366:You have been killed by admin {b}%s{/b}.
+367:Usage: /freeze <player>
+368:You have freezed {b}%s{/b}.
+369:You have been freezed by admin {b}%s{/b}.
+370:Usage: /unfreeze <player>
+371:You have unfreezed {b}%s{/b}.
+372:You have been unfreezed by admin {b}%s{/b}.
+373:Usage: /disarm <player>
+374:You have disarmed {b}%s{/b}.
+375:You have been disarmed by admin {b}%s{/b}.
+376:You can't teleport this player at the moment.
+377:You can't teleport player 1 at the moment.
+378:You can't teleport player 2 at the moment.
+379:The given player isn't spawned.
+380:Usage: /remove <player>
+381:The given player isn't in any vehicle.
+382:You have removed {b}%s{/b} from his vehicle.
+383:Admin {b}%s{/b} has removed you from the vehicle.
+384:Chat has been cleared by admin {b}%s{/b}.
+385:Player 1 can't be the same as player 2.
+386:Configuration panel > Censorship
+387:Configuration panel > Censorship > Word list
+388:Configuration panel > Censorship > Add new word
+389:Configuration panel > Censorship > Delete word
+390:Word censorship has been enabled.
+391:Word censorship has been disabled.
+392:(No words)
+393:Enter new word:
+394:There is no words on the list.
+395:The given word is incorrect.
+396:Word {b}%s{/b} has been added to the censorship list.
+397:Word {b}%s{/b} has been removed from the censorship list.
+398:The given word is already on the censorship list.
+399:The given text is too long.
+400:Chat colour embedding has been enabled.
+401:Chat colour embedding has been disabled.
+402:Usage: /report <player> <reason>
+403:{b}%s{/b} has reported player {b}%s{/b}, reason: %s
+404:You have sent report of player {b}%s{/b} to admins, reason: %s
+405:The maximun length of the report is 50 characters.
+406:Reports
+407:You just have reported this player, please wait a moment until you can do this again.
+408:(no reports)
+409:Spec
+410:Delete
+411:You can't spectate players at the moment.
+412:Player {b}%s{/b} has been removed from the report list.
+413:Usage: /vsay <text>
+414:You must be a VIP to use this command.
+415:Usage: /v <text>
+416:*hidden*
+417:{b}Game moderators:{/b}
+418:{b}Admins (level 1):{/b}
+419:{b}Admins (level 2):{/b}
+420:{b}Admins (level 3):{/b}
+421:noone
+422:VIP players:
+423:The queue is full.
+424:{b}Labirynt{/b} has been ended because there is no enough players to continue it.
+425:{b}%s{/b} wins the {b}labirynt{/b}.
+426:You have won the {b}labirynt{/b}! Respect +5
+427:{b}Labirynt{/b} has been ended because of time limit.
+428:{b}Strzelnica{/b} has been ended because of time limit.
+429:{b}Wojna Gangów{/b} has been ended because there is no enough players to continue it.
+430:{b}Wojna Gangów{/b} has been ended because of time limit.
+431:Green team wins {b}WG{/b}!
+432:Blue team wins {b}WG{/b}!
+433:Your team wins {b}WG{/b}!
+434:Take cover!~n~Start in %i seconds!
+435:Start in %i seconds!~n~Get ready,~n~you are searching.
+436:%i players are still not found.~n~Searchers: %i
+437:Let's find them!
+438:{b}Chowany{/b} has been ended because of time limit.
+439:{b}%s{/b} has found player {b}%s{/b}.
+440:You are too far from the designated area and you have been eliminated.
+441:{b}Chowany{/b} has been ended because of no searching players.
+442:{b}Chowany{/b} has been ended because of no hidding players.
+443:{b}%s{/b} wins the {b}chowany{/b}!
+444:You have won the {b}chowany{/b}! Respect +10
+445:doors unlocked
+446:doors locked
+447:{b}Derby{/b} has been interrupted because of time limit
+448:There is no suitcase left currently.
+449:There is no gift left currently.
+450:Your vehicle is now equipped with NITRO. Press {b}ALT{/b} or {b}CTRL{/b} to use it.
+451:You have to be in vehicle to do this.
+452:You cannot save teleport in current location.
+453:Location saved, accessible now with {b}/telpos{/b}.
+454:You can't do this now!
+455:Your vehicle doesn't require fixing.
+456:You don't have enough cash!
+457:Vehicle fixed.
+458:There's no voting running currently.
+459:Vote already given.
+460:Voting was aborted by admin.
+461:Attraction is currently unavailable.
+462:There is no horsehoe left currently
+463:{b}%s{/b} received a warning for admin: {b}%s{/b}.
+464:You have no warnings now.
+465:User ignores warnings.
+466:Type {b}/register{/b} to setup your permament account. It's worth it!
+
