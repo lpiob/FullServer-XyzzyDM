@@ -1,0 +1,4 @@
+// tu mozna postawiac wszystkie pojazdy
+
+AddStaticVehicle(482,2456.40429688,-1295.96276855,24.01093864,0.00000000,-1,-1); //Burrito
+
