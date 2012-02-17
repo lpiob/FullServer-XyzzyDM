@@ -80,8 +80,8 @@ Brakujace pliki:
 
 Dodatkowo, z wersji tej usuniete zostalo:
 	- caly panel www (http://fs.i64.pl)
-	- czesc plikow audio z katalogu audiopacks/fullserver/, zawierajacych glos Kicii,
-	  nagranych specjalnie dla FullServera
+	- czesc plikow audio z katalogu audiopacks/fullserver/, zawierajacych glos 
+	  Kicii, nagranych specjalnie dla FullServera
 	- kod odpowiedzialny za burdel (18+)
 	- 99% obiektow uzywane na FullServerze - nie byly nigdy one czescia kodu, oprocz
 	  3 lokalizacji znajdujacych sie w pliku objects.inc
@@ -172,9 +172,11 @@ Specjalne podziekowania dla:
 	- graczy, vipow, moderatorow i administratorow FullServera, bez ktorych nie 
 	  byloby potrzeby tworzyc tego kodu.
 
-	- ekipy SA-MP, a w szczegolnosci JernejL oraz dugi-ego.
+	- DavO, zalozyciela FullServera.
 
-	- firmy ServerProject <http://serverproject.pl/>, dzieki ktorej profesjonalnym uslugom, FullServer
-	  istnieje i moze sie rozwijac.
+	- Ekipy SA-MP, a w szczegolnosci JernejL oraz dugi-ego.
+
+	- Firmy ServerProject <http://serverproject.pl/>, dzieki ktorej 
+	  profesjonalnym uslugom, FullServer istnieje i moze sie rozwijac.
 
 	- Wkurzacza.
