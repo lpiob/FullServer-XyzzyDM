@@ -1,11 +1,3 @@
-/*Timer:NPCChecks[60000](){
-	printf("NPC Checks");
-	//	--- NPC CHECKS ---
-	if (gmNPC[gmnt_fullserver]==INVALID_PLAYER_ID || !IsPlayerNPC(gmNPC[gmnt_fullserver])) 
-		ConnectNPC("FullServer","hydra");
-	else
-		SetupNPC(gmnt_fullserver);
-}*/
 
 
 Timer:MoneyPickups[10000](){
@@ -251,12 +243,6 @@ Timer:PingUpdate[5000](){
 		if (++i>100) return;
 	}
 	gmTemp[timer_PingUpdate_lastidx]=0;
-}
-
-Timer:LogoAnimation[50000](){
-//	printf("Timer LogoAnimation");
-	gmTemp[fsaIndex] = 0;
-	gmTemp[fsaTimer] = SetTimer("AnimateFullServerLogo", gmTemp[pPlayerCount]<100?120:240, true);
 }
 
 Timer:VehiclesCleanup[300000](){	// 5 minut

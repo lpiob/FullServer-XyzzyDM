@@ -1,0 +1,62 @@
+Na serwerze zostal zainstalowany czysty gamemod XyzzyDM.
+
+Jest to zaawansowany, polski gamemod o otwartych zrodlach,
+rozwijany na potrzeby serwera FullServer (http://fullserver.eu/).
+
+Mozesz rozwijac i modyfikowac kod zrodlowy tego gamemoda, najnowsza
+publiczna wersje znajdziesz pod adresem: 
+
+	https://github.com/lpiob/FullServer-XyzzyDM
+
+Dodatkowe informacje o konfiguracji poszczegolnych elementow gamemodu
+(trasy race, areny do atrakcji, osiagniecia, domy, telepickupy, itd)
+znajdziesz na wiki: https://github.com/lpiob/FullServer-XyzzyDM/wiki
+
+Wiekszosc komend i atrakcji opisanych jest w gamemodzie pod komenda
+/pomoc.
+
+=====================================================================
+RZECZY KTORE MUSISZ ZROBIC PO INSTALACJI SERWERA
+=====================================================================
+
+Polacz sie z serwerem i zarejestruj sie (/rej haslo).
+
+Nastepnie polacz sie z baza danych: http://poland.serverproject.pl/phpmyadmin/
+Zaloguj sie tam uzywajac loginu i hasla ktore znajdziesz w pliku
+scriptfiles/XyzzyDM/mysql.cfg
+
+W tabeli fs_players odnajdz swoj rekord, edytuj go i zmien level na 4 - to
+poziom administratora RCON.
+
+Po ponownym polaczeniu bedziesz mogl zalogowac sie na konto administratora
+RCON po wpisaniu komendy /rcon login <haslo>
+
+Haslo rcona znajduje sie w pliku server.cfg - koniecznie zmien je na inne!
+
+Haslo dla regularnych adminow ustalisz wpisujac komende /ahaslo <haslo>
+
+Inne poziomy ktore mozesz ustawic graczom w tabeli fs_players (kolumna level):
+
+	1 - moderator
+	2 - administrator I-szego poziomu
+	3 - administrator II-giego poziomu
+	5 - ukryty RCON
+
+Moderatorzy loguja sie za pomoca komendy /gmlogin.
+Administratorzy loguja sie za pomoca komendy /alogin <haslo><spacja>. Spacja
+zawsze jest na koncu!
+
+Tekst powitalny mozesz zmienic w tabeli fs_config.
+
+Pamietaj, ze zainstalowana zostala tylko podstawa kodu z jedna arena na kazda
+z atrakcji, z jednym domem itd - mozesz dodac kolejne edytujac baze danych 
+korzystajac z dolaczonego filterscriptu raceeditor.
+
+Wszelka pomoc w konfigurowaniu gamemodu znajdziesz pod adresem
+https://github.com/lpiob/FullServer-XyzzyDM/wiki
+
+Pamietaj ze to projekt otwarty i mozesz pomoc go udokumentowac, dzieki czemu
+inni beda mieli latwiej. Aby moc edytowac Wiki, zarejestruj sie na stronie 
+github.com.
+
+Have fun :-).

@@ -670,12 +670,12 @@ ShowElement(playerid, tdElement, bool:show)
 			if(show)
 			{
 				TextDrawShowForPlayer(playerid, gTextDraw[TD_FULLSERVER]);
-				TextDrawShowForPlayer(playerid, gTextDraw[TD_FULLSERVERWEBSITE]);
+//				TextDrawShowForPlayer(playerid, gTextDraw[TD_FULLSERVERWEBSITE]);
 			}
 			else
 			{
 				TextDrawHideForPlayer(playerid, gTextDraw[TD_FULLSERVER]);
-				TextDrawHideForPlayer(playerid, gTextDraw[TD_FULLSERVERWEBSITE]);
+//				TextDrawHideForPlayer(playerid, gTextDraw[TD_FULLSERVERWEBSITE]);
 			}
 		}
 	}

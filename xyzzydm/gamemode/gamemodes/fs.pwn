@@ -4,8 +4,9 @@
 #include "YSI/y_timers"
 
 #include "fullserver/version"
-#include "fullserver/license"
+
 #include "fullserver/fs_header"
+#include "fullserver/license"
 #include "fullserver/dialogs"
 #include <sscanf2>
 #include <streamer>
@@ -103,31 +104,28 @@ public OnGameModeInit()
 	}
 
 	printf( "\n\n");
-	printf( "d88888b db    db db      db      .d8888. d88888b d8888b. db    db d88888b d8888b. ");
-	printf( "88'     88    88 88      88      88'  YP 88'     88  `8D 88    88 88'     88  `8D ");
-	printf( "88ooo   88    88 88      88      `8bo.   88ooooo 88oobY' Y8    8P 88ooooo 88oobY' ");
-	printf( "88~~~   88    88 88      88        `Y8b. 88~~~~~ 88`8b   `8b  d8' 88~~~~~ 88`8b   ");
-	printf( "88      88b  d88 88booo. 88booo. db   8D 88.     88 `88.  `8bd8'  88.     88 `88. ");
-	printf( "YP      ~Y8888P' Y88888P Y88888P `8888Y' Y88888P 88   YD    YP    Y88888P 88   YD\n\n");
-	printf( "        FullServer XyzzyDM v%s, %s\n\n", GMVERSION, GMCOMPILED);
-	format(buffer,sizeof buffer,"   Fullserver XyzzyDM v%s", GMVERSION);
+	printf( "[****] XyzzyDM v%s, %s\n\n", GMVERSION, GMCOMPILED);
+	format(buffer,sizeof buffer,"   XyzzyDM v%s", GMVERSION);
 
 	printf("Uruchamianie FullServer XyzzyDM:");
 	printf(" Ladowanie ustawien i elementow glownych ...");
 
 	GetServerVarAsString("bind", gmData[serverIP], sizeof gmData[serverIP]);
+	gmData[serverPORT]= GetServerVarAsInt("port");
 	// zabezpieczenie przeciwko odpalaniu na innym adresie ip
-	if (strcmp(gmData[serverIP],GMHOST,false)!=0)
-		SendRconCommand("exit");
+//	if (strcmp(gmData[serverIP],GMHOST,false)!=0)
+//		SendRconCommand("exit");
 
-	SetGameModeText("•• XyzzyDM ••");
-	SendRconCommand("mapname •• Full Andreas ••");
+	SetGameModeText("XyzzyDM");
+	SendRconCommand("mapname X-Andreas");
+	printf("1");
 
 	UsePlayerPedAnims();
 	AllowAdminTeleport(1);
 	DisableInteriorEnterExits();
 	EnableStuntBonusForAll(false);
 	ShowPlayerMarkers(PLAYER_MARKERS_MODE_GLOBAL);
+	printf("2");
 	
 	gmTemp[lastHour] = -1;
 	gmTemp[lastDay] = -1;
@@ -190,7 +188,7 @@ public OnGameModeInit()
 		}
 		staticVehicleCount++;
 	}
-	new File:olist = fopen("pojazdy.txt", io_read);
+	new File:olist = fopen("XyzzyDM/pojazdy.txt", io_read);
 	new cnt=0, lnum=0, line[255],v=0;
 	while(fread(olist, line)) { 
 		lnum++;
@@ -2509,7 +2507,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					 szList[1024],
 					 File:hFile;
 					
-					hFile = fopen("FullServer/cenzura.ini", io_read);
+					hFile = fopen("XyzzyDM/cenzura.ini", io_read);
 					
 					while(fread(hFile, buffer))
 					{
@@ -2540,7 +2538,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					 szList[1024],
 					 File:hFile;
 					
-					hFile = fopen("FullServer/cenzura.ini", io_read);
+					hFile = fopen("XyzzyDM/cenzura.ini", io_read);
 					
 					while(fread(hFile, buffer))
 					{
@@ -2602,7 +2600,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				return 1;
 			}
 			
-			hFile = fopen("FullServer/cenzura.ini", io_append);
+			hFile = fopen("XyzzyDM/cenzura.ini", io_append);
 			
 			format(buffer, sizeof buffer, "%s\n", inputtext);
 			fwrite(hFile, buffer);
@@ -2639,8 +2637,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			 File:hFileTmp,
 			 _count = 0;
 					
-			hFile = fopen("FullServer/cenzura.ini", io_read);
-			hFileTmp = fopen("FullServer/cenzura.tmp", io_write);
+			hFile = fopen("XyzzyDM/cenzura.ini", io_read);
+			hFileTmp = fopen("XyzzyDM/cenzura.tmp", io_write);
 					
 			while(fread(hFile, buffer))
 			{
@@ -2653,8 +2651,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			fclose(hFileTmp);
 			fclose(hFile);
 			
-			hFile = fopen("FullServer/cenzura.ini", io_write);
-			hFileTmp = fopen("FullServer/cenzura.tmp", io_read);
+			hFile = fopen("XyzzyDM/cenzura.ini", io_write);
+			hFileTmp = fopen("XyzzyDM/cenzura.tmp", io_read);
 			
 			while(fread(hFileTmp, buffer))
 			{
@@ -2663,7 +2661,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			fclose(hFileTmp);
 			fclose(hFile);
-			fremove("FullServer/cenzura.tmp");
+			fremove("XyzzyDM/cenzura.tmp");
 			
 			format(buffer, sizeof buffer, TXT(playerid, 347), inputtext);
 			Msg(playerid, COLOR_INFO, buffer);

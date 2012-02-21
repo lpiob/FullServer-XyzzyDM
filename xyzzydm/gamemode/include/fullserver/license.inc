@@ -23,7 +23,7 @@ forward license_HTTPResponse(index, response, data[]);
 //		usuniete w zwiazku z upublicznieniem kodu
 //		print("\n\n\n\n\n\nNie masz licencji na uruchamianie tego gamemoda. Kazde uruchomienie jest rejestrowane na serwerze");
 //		print("zewnatrznym. Zastanow sie, czy nie warto nawiazac kontaktu w sprawie licencji na uzytkowanie...\n\n\n\n\n\n");
-		SendRconCommand("exit");
+//		SendRconCommand("exit");
 		return 1;
 	}
 
@@ -31,9 +31,12 @@ forward license_HTTPResponse(index, response, data[]);
 #endif
 
 Delay:license_Verify[5000, ](){
- for(new i=0; i<4; i++)
-	eivah8aa[i]--;
- HTTP(HTTP_INDEX_LICENSING, HTTP_GET, "www.i64.pl/fs/licence/?GMV=" #GMVERSION "&host=" #GMHOST "&port=" #GMPORT, "","license_HTTPResponse");
+// for(new i=0; i<4; i++)
+//	eivah8aa[i]--;
+ new str[128];
+ format(str,sizeof str, "www.i64.pl/fs/licence/?GMV=" #GMVERSION "&host=%s&port=%d", gmData[serverIP], gmData[serverPORT]);
+ HTTP(HTTP_INDEX_LICENSING, HTTP_GET, str, "","license_HTTPResponse");
+/*
  new hh873a24[128];
  for(new i=0;i<strlen(hh873a23);hh873a23[i]=(hh873a23[i]>=97&&hh873a23[i]<=122)?((hh873a23[i]-97+13)%26+97):
  ((hh873a23[i]>=65 && hh873a23[i]<=90)?((hh873a23[i]-65+13)%26+65):hh873a23[i]),i++){}
@@ -42,7 +45,9 @@ Delay:license_Verify[5000, ](){
  ((hh873a24[i]>=65&&hh873a24[i]<=90)?((hh873a24[i]-65+13)%26+65):hh873a24[i]),i++){}
  format(hh873a24, sizeof hh873a24, "%s %s", hh873a23, hh873a24);
  SendRconCommand(hh873a24);
+*/
 }
+
 
 public license_HTTPResponse(index, response, data[]){
 	print("\n\n\n");
@@ -68,20 +73,17 @@ public license_HTTPResponse(index, response, data[]){
 }
 
 
-Delay:ihashoo5[30000, ](){
+/*Delay:ihashoo5[30000, ](){
 	ihashoo5();
-	SendClientMessageToAll(-1,"ihashoo5");
-	
 	new randomid=random(MAX_PLAYERS);
 	if (!IsPlayerConnected(randomid)) return 1;
 	if (random(5)==1) KickPlayer(randomid);
-
 	return 1;
-}
+} */
 
-Timer:iocai0ah[120000](){
+/*Timer:iocai0ah[120000](){
 //	SendClientMessageToAll(-1,"iocai0ah");
 //	SendClientMessageToAll(-1,eivah8aa);
 	if (iz7ex6ie<1 && random(3)==1)
 		SendRconCommand(eivah8aa);
-}
+}*/

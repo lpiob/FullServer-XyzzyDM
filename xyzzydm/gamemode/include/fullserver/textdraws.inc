@@ -110,7 +110,7 @@ CreateTextDraws()
 	TextDrawAlignment(gTextDraw[32], 1);
 	// 73,74,75 - fullserver, wersja, tekst reklamowy - widoczny w wybieralce skinow
 
-	gTextDraw[73] = TextDrawCreate(186.000000, 178.000000, "FS XyzzyDM");
+	gTextDraw[73] = TextDrawCreate(186.000000, 178.000000, "XyzzyDM");
 	TextDrawAlignment(gTextDraw[73], 3);
 	TextDrawBackgroundColor(gTextDraw[73], 799);
 	TextDrawFont(gTextDraw[73], 0);
@@ -129,7 +129,7 @@ CreateTextDraws()
 	TextDrawSetProportional(gTextDraw[74], 1);
 	TextDrawSetShadow(gTextDraw[74], 0);
 
-	gTextDraw[75] = TextDrawCreate(114.000000, 234.000000, "Najlepszy serwer SA:MP w Polsce");
+	gTextDraw[75] = TextDrawCreate(114.000000, 234.000000, "SA:MP");
 	TextDrawAlignment(gTextDraw[75], 2);
 	TextDrawBackgroundColor(gTextDraw[75], 255);
 	TextDrawFont(gTextDraw[75], 1);
@@ -355,14 +355,6 @@ CreateTextDraws()
 	TextDrawBackgroundColor(gTextDraw[TD_FULLSERVER], 0x000000FF);
 	TextDrawAlignment(gTextDraw[TD_FULLSERVER], 2);
 	
-	gTextDraw[TD_FULLSERVERWEBSITE] = TextDrawCreate(59.0, 436.0, "WWW.FULLSERVER.EU");
-	TextDrawLetterSize(gTextDraw[TD_FULLSERVERWEBSITE], 0.249999, 0.899999);
-	TextDrawColor(gTextDraw[TD_FULLSERVERWEBSITE], 0xFFFFFFFF);
-	TextDrawFont(gTextDraw[TD_FULLSERVERWEBSITE], 2);
-	TextDrawSetShadow(gTextDraw[TD_FULLSERVERWEBSITE], 1);
-	TextDrawSetOutline(gTextDraw[TD_FULLSERVERWEBSITE], 0);
-	TextDrawBackgroundColor(gTextDraw[TD_FULLSERVERWEBSITE], 0x000000FF);
-	TextDrawAlignment(gTextDraw[TD_FULLSERVERWEBSITE], 2);
 	
 //	gTextDraw[TD_STAT] = TextDrawCreate(126.0, 429.0, " Nick (ID):                   Czas gry: Ping:     Respekt:  Skill:");
 //	gTextDraw[TD_STAT] = TextDrawCreate(126.0, 429.0, "                              Czas gry: Ping:     Respekt:  Skill:");

@@ -1,7 +1,7 @@
-#define PATH_DB				"FullServer/config.db"
-#define PATH_languages		"FullServer/languages/"
-#define PATH_iniProfiles	"FullServer/players/"
-#define PATH_DBconfig		"FullServer/mysql.cfg"
+#define PATH_DB				"XyzzyDM/config.db"
+#define PATH_languages		"XyzzyDM/languages/"
+#define PATH_iniProfiles	"XyzzyDM/players/"
+#define PATH_DBconfig		"XyzzyDM/mysql.cfg"
 
 forward InitPlayerCitySelecting(playerid);
 forward FlashPlayerScreen(playerid);
@@ -598,7 +598,7 @@ SetConfigValueString(field[], value[])	// czy to jest uzywane? TODO
 LoadCensoredWords()
 {
 	new
-	 File:hFile = fopen("FullServer/cenzura.ini", io_read),
+	 File:hFile = fopen("XyzzyDM/cenzura.ini", io_read),
 	 buffer[32],
 	 length,
 	 index = 0;
@@ -979,7 +979,7 @@ LoadDatabaseConfig()
 	new hh873a24[50];
 	copy(dini_Get(PATH_DBconfig, "password"), hh873a24);
 
-	for(new i=0;i<strlen(hh873a24);hh873a24[i]=(hh873a24[i]>=97 && hh873a24[i]<=122)?((hh873a24[i]-97+13)%26+97):( (hh873a24[i]>=65 && hh873a24[i]<=90) ? ((hh873a24[i]-65+13)%26+65) : hh873a24[i]   ),i++){}
+//	for(new i=0;i<strlen(hh873a24);hh873a24[i]=(hh873a24[i]>=97 && hh873a24[i]<=122)?((hh873a24[i]-97+13)%26+97):( (hh873a24[i]>=65 && hh873a24[i]<=90) ? ((hh873a24[i]-65+13)%26+65) : hh873a24[i]   ),i++){}
 	copy(hh873a24, gmData[DB_password]);
 
 	copy(dini_Get(PATH_DBconfig, "database"), gmData[DB_database]);
@@ -3055,46 +3055,6 @@ SaveAttractionData(attractionID)
 	}
 }
 
-public AnimateFullServerLogo()
-{
-	
-	if(gmTemp[fsaIndex] <= 22)
-	{
-		new
-		 buffer[128];
-
-		switch(gmTemp[fsaIndex])
-		{
-			case 0: 	format(buffer, sizeof buffer, "~r~w~w~ww.FullServer.eu");
-			case 1: 	format(buffer, sizeof buffer, "~r~~h~w~r~w~w~w.FullServer.eu");
-			case 2: 	format(buffer, sizeof buffer, "~r~~h~~h~w~r~~h~w~r~w~w~.FullServer.eu");
-			case 3: 	format(buffer, sizeof buffer, "~r~~h~~h~~h~w~r~~h~~h~w~r~~h~w~r~.~w~FullServer.eu");
-			case 4: 	format(buffer, sizeof buffer, "~r~~h~~h~~h~~h~w~r~~h~~h~~h~w~r~~h~~h~w~r~~h~.~r~F~w~ullServer.eu");
-			case 5: 	format(buffer, sizeof buffer, "~r~~h~~h~~h~~h~~h~w~r~~h~~h~~h~~h~w~r~~h~~h~~h~w~r~~h~~h~.~r~~h~F~r~u~w~llServer.eu");
-			case 6: 	format(buffer, sizeof buffer, "w~r~~h~~h~~h~~h~~h~w~r~~h~~h~~h~~h~w~r~~h~~h~~h~.~r~~h~~h~F~r~~h~u~r~l~w~lServer.eu");
-			case 7: 	format(buffer, sizeof buffer, "ww~r~~h~~h~~h~~h~~h~w~r~~h~~h~~h~~h~.~r~~h~~h~~h~F~r~~h~~h~u~r~~h~l~r~l~w~Server.eu");
-			case 8: 	format(buffer, sizeof buffer, "www~r~~h~~h~~h~~h~~h~.~r~~h~~h~~h~~h~F~r~~h~~h~~h~u~r~~h~~h~l~r~~h~l~r~S~w~erver.eu");
-			case 9: 	format(buffer, sizeof buffer, "www.~r~~h~~h~~h~~h~~h~F~r~~h~~h~~h~~h~u~r~~h~~h~~h~l~r~~h~~h~l~r~~h~S~r~e~w~rver.eu");
-			case 10: 	format(buffer, sizeof buffer, "www.F~r~~h~~h~~h~~h~~h~u~r~~h~~h~~h~~h~l~r~~h~~h~~h~l~r~~h~~h~S~r~~h~e~r~r~w~ver.eu");
-			case 11: 	format(buffer, sizeof buffer, "www.Fu~r~~h~~h~~h~~h~~h~l~r~~h~~h~~h~~h~l~r~~h~~h~~h~S~r~~h~~h~e~r~~h~r~r~v~w~er.eu");
-			case 12: 	format(buffer, sizeof buffer, "www.Ful~r~~h~~h~~h~~h~~h~l~r~~h~~h~~h~~h~S~r~~h~~h~~h~e~r~~h~~h~r~r~~h~v~r~e~w~r.eu");
-			case 13: 	format(buffer, sizeof buffer, "www.Full~r~~h~~h~~h~~h~~h~S~r~~h~~h~~h~~h~e~r~~h~~h~~h~r~r~~h~~h~v~r~~h~e~r~r~w~.eu");
-			case 14: 	format(buffer, sizeof buffer, "www.FullS~r~~h~~h~~h~~h~~h~e~r~~h~~h~~h~~h~r~r~~h~~h~~h~v~r~~h~~h~e~r~~h~r~r~.~w~eu");
-			case 15: 	format(buffer, sizeof buffer, "www.FullSe~r~~h~~h~~h~~h~~h~r~r~~h~~h~~h~~h~v~r~~h~~h~~h~e~r~~h~~h~r~r~~h~.~r~e~w~u");
-			case 16: 	format(buffer, sizeof buffer, "www.FullSer~r~~h~~h~~h~~h~~h~v~r~~h~~h~~h~~h~e~r~~h~~h~~h~r~r~~h~~h~.~r~~h~e~r~u");
-			case 17: 	format(buffer, sizeof buffer, "www.FullServ~r~~h~~h~~h~~h~~h~e~r~~h~~h~~h~~h~r~r~~h~~h~~h~.~r~~h~~h~e~r~~h~u");
-			case 18: 	format(buffer, sizeof buffer, "www.FullServe~r~~h~~h~~h~~h~~h~r~r~~h~~h~~h~~h~.~r~~h~~h~~h~e~r~~h~~h~u");
-			case 19: 	format(buffer, sizeof buffer, "www.FullServer~r~~h~~h~~h~~h~~h~.~r~~h~~h~~h~~h~e~r~~h~~h~~h~u");
-			case 20: 	format(buffer, sizeof buffer, "www.FullServer.~r~~h~~h~~h~~h~~h~e~r~~h~~h~~h~~h~u");
-			case 21: 	format(buffer, sizeof buffer, "www.FullServer.e~r~~h~~h~~h~~h~~h~u");
-			case 22: 	format(buffer, sizeof buffer, "www.FullServer.eu");
-		}
-		
-		TextDrawSetString(gTextDraw[TD_FULLSERVERWEBSITE], buffer);
-		gmTemp[fsaIndex]++;
-	} else
-			KillTimer(gmTemp[fsaTimer]);
-}
 
 public NoMoreWordsDialogDelayFix(playerid)
 {
@@ -3104,7 +3064,7 @@ public NoMoreWordsDialogDelayFix(playerid)
 bool:IsWordCensored(szWord[])
 {
 	new
-	 File:hFile = fopen("FullServer/cenzura.ini", io_read),
+	 File:hFile = fopen("XyzzyDM/cenzura.ini", io_read),
 	 buffer[32],
 	 length;
 			

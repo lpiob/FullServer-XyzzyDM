@@ -10,7 +10,7 @@
 
 #define FLOAT_NAN     (Float:0xFFFFFFFF)
 
-#define SALT_ALOGIN 				"XyzzyDMFTW"
+#define SALT_ALOGIN 				"thah9eZi"
 
 // KEY_PRESSED(keys)
 #define KEY_PRESSED(%0) \
@@ -75,7 +75,7 @@
 
 #define MAX_LOG_STRING_LENGTH 	200
 
-#define PATH_logBase			"FullServer/log/"
+#define PATH_logBase			"XyzzyDM/log/"
 #define PATH_logSystem 			"system"
 #define PATH_logCmd				"commands"
 #define PATH_logChat			"mainchat"
@@ -279,7 +279,7 @@
 #define TD_STAT_RESPECT_EN			112
 #define TD_STAT_SKILL				113*/
 #define TD_FULLSERVER				114
-#define TD_FULLSERVERWEBSITE		115
+
 // #define TD_FULLSERVERFLASH			116
 #define TD_AREAFULLDM				117
 #define TD_AREANODM					118
@@ -560,7 +560,8 @@ enum e_gmData
 	maxCensoredWords,
 	bool:chatColors,
 
-	serverIP[16]
+	serverIP[16],
+	serverPORT
 }
 
 enum e_gmNpcTypes
@@ -1600,19 +1601,12 @@ new EN_szHelpVIP[][] = {
 };
 
 new PL_szHelpAuthor[][] = {
- "{0092F5}FullServer™ {F5C172}XyzzyDM wersja publiczna",
+ "{0092F5}XyzyDM {F5C172} wersja publiczna",
  GMVERSION, GMCOMPILED,
  " ",
  "{A9C4E4}Kod: {C1D0E5}Arnold \"SeriouS\" Fornalczyk {A9C4E4}oraz {C1D0E5}Lukasz \"Wielebny\" Biegaj",
  " ",
- "{A9C4E4}Specjalne podziekowania dla tworcow elementow gry i testerow:",
- "{C1D0E5}CTX123, Bas_, DavO, LU, NeutroN, Kicia, Sayu,",
- "Saracen, Sebox, Surv, Times, Theo, WUBE i innych",
- " ",
- "{A9C4E4}Podziêkowania dla: {C1D0E5}DracoBlue, Incognito (Streamer Plugin), Sacky",
- "StrickenKid (MySQL Plugin), Zeex (ZCMD System)",		// Totto8492 (GeoIP Plugin), 
- " ",
- "{A9C4E4}© Copyright 2010-2011 - FullServer™ - www.FullServer.eu"
+ "{A9C4E4}© Copyright 2010-2012 - FullServer™ - www.FullServer.eu"
 };
 
 new EN_szHelpAuthor[][] = {

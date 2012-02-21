@@ -1,4 +1,4 @@
-#define GMVERSION "3.3r1000"
-#define GMCOMPILED "skompilowana 16.02.2012 22:33:31 przez lukasz@onomatopeja"
-#define GMHOST "10.39.7.2"
-#define GMPORT 8888
+#define GMVERSION "3.3-SP"
+#define GMCOMPILED "skompilowana 21.02.2012 13:26:48 przez lukasz@onomatopeja"
+#define GMHOST "91.204.162.80"
+#define GMPORT
