@@ -1593,7 +1593,7 @@ new PL_szHelpVIP[][] = {
     "* Dodawanie sobie/komus kamizelki kuloodpornej za darmo",
 	"* Teleportowanie graczy do siebie i od siebie",
 	" ",
-	"Zostan VIPem - doladuj swoje konto: {FFEF00}http://www.fullserver.eu/doladowania"
+	"Zostan VIPem - doladuj swoje konto"
 };
 
 new EN_szHelpVIP[][] = {
@@ -1601,7 +1601,7 @@ new EN_szHelpVIP[][] = {
 };
 
 new PL_szHelpAuthor[][] = {
- "{0092F5}XyzyDM {F5C172} wersja publiczna",
+ "{0092F5}XyzzyDM {F5C172} wersja publiczna",
  GMVERSION, GMCOMPILED,
  " ",
  "{A9C4E4}Kod: {C1D0E5}Arnold \"SeriouS\" Fornalczyk {A9C4E4}oraz {C1D0E5}Lukasz \"Wielebny\" Biegaj",
