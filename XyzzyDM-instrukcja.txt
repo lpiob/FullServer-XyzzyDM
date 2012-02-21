@@ -21,7 +21,8 @@ RZECZY KTORE MUSISZ ZROBIC PO INSTALACJI SERWERA
 
 Polacz sie z serwerem i zarejestruj sie (/rej haslo).
 
-Nastepnie polacz sie z baza danych: http://poland.serverproject.pl/phpmyadmin/
+Nastepnie polacz sie z baza danych poprzez phypmyadmin (link znajdziesz
+w panelu)
 Zaloguj sie tam uzywajac loginu i hasla ktore znajdziesz w pliku
 scriptfiles/XyzzyDM/mysql.cfg
 
