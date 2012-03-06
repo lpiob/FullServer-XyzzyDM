@@ -103,6 +103,8 @@ domy_OnMysqlQuery(resultid,spareid){
 		if (IsValidDynamicCP(FSDomy[i][ed_cp])) DestroyDynamicCP(FSDomy[i][ed_cp]);
 		if (IsValidDynamic3DTextLabel(FSDomy[i][ed_3dtext]))	DestroyDynamic3DTextLabel(FSDomy[i][ed_3dtext]);
 
+		if (IsValidDynamicMapicon(FSDomy[i][ed_mapicon])) DestroyDynamicMapicon(FSDomy[i][ed_mapicon]);
+
 		if (FSDomy[i][ed_daysLeft]<0) FSDomy[i][ed_owner]=0;
 		
 		if (FSDomy[i][ed_owner]>0 && FSDomy[i][ed_daysLeft]>=0) {
@@ -130,6 +132,7 @@ domy_OnMysqlQuery(resultid,spareid){
 					((FSDomy[i][ed_owner]>0)?PICKUP_HOUSE_PURCHASED:PICKUP_HOUSE_NOTPURCHASED),1,	DX,DY,DZ,	0,0, -1, 50.0);
 		FSDomy[i][ed_cp]=CreateDynamicCP(DX,DY,DZ,1.5,	0,0, -1, 5.0);
 
+		FSDomy[i][ed_mapicon]=CreateDynamicMapIcon(DX,DY,DZ,32,1,0,0,-1,6000);
 
 		FSDomy[i][ed_entrance][0]=DX;
 		FSDomy[i][ed_entrance][1]=DY;
