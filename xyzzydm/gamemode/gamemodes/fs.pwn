@@ -2147,12 +2147,33 @@ public OnRconLoginAttempt(ip[], password[], success)
 	{
 		new
 		 buffer[128];
+		 
+	 	static RconLoginTimes;
+		static Times;
+
+		if((GetTickCount()-RconLoginTimes) < 1000){
+			Times++;
+			if(Times > 2){
+				Times = RconLoginTimes = 0;
+				foreach(hackerid){
+
+					if(!strcmp(ip,GetPlayerIP(hackerid),true)){
+						SendClientMessage(hackerid, 0xFFFFFFFF, "SERVER: Wrong Password. Bye!");
+						BanEx(hackerid,"RCON CRASH ATTEMPT!");
+					}
+				}
+			}
+		}else{
+			Times = RconLoginTimes = 0;
+		}
+
+		RconLoginTimes = GetTickCount();
 		
 		foreach(playerid)
 		{
 			if(IsAdmin(playerid, LEVEL_ADMIN3))
 			{
-				format(buffer, sizeof buffer, TXT(playerid, 146), ip, password);
+				format(buffer, sizeof buffer, TXT(playerid, 146), ip, "---");
 				Msg(playerid, COLOR_INFO2, buffer);
 			}
 		}
