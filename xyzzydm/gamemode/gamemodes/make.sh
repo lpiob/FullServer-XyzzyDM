@@ -1,8 +1,8 @@
 #!/bin/sh
 
 date
-#SVER=`svnversion ../..`
-SVER="1000"
+SVER=`svnversion ../..`
+#SVER="1000"
 echo \#define GMVERSION \"3.3r$SVER\" > ../include/fullserver/version.inc
 KIEDY=`date +%x\ %T`
 GDZIE=`hostname`
