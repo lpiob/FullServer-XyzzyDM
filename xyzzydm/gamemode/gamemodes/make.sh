@@ -2,7 +2,10 @@
 
 date
 SVER=`svnversion ../..`
+# Jezeli nie uzywasz repozytorium SVN, zastap powyzsza linie inna komenda ktora zwroci numer wersji
+# lub zamien na ponizsza linię
 #SVER="1000"
+
 echo \#define GMVERSION \"3.3r$SVER\" > ../include/fullserver/version.inc
 KIEDY=`date +%x\ %T`
 GDZIE=`hostname`
