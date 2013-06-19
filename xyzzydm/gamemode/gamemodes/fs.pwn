@@ -1,7 +1,7 @@
 #include <a_samp>
 #tryinclude <a_http>
 
-#include "YSI/y_timers"
+#include "y_timers"
 
 #include "fullserver/version"
 #include "fullserver/license"
@@ -14,6 +14,7 @@
 #include <mapandreas>
 
 //#define USE_OPSP
+#define EXIT_ON_LICENSEFAIL
 #if defined USE_OPSP
 #include <OPSP>
 #endif
