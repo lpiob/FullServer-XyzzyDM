@@ -79,7 +79,7 @@ Brakujace pliki:
 =====================================================================
 
 Dodatkowo, z wersji tej usuniete zostalo:
-	- caly panel www (http://fs.i64.pl)
+	- caly panel www (http://fs.i128.pl)
 	- czesc plikow audio z katalogu audiopacks/fullserver/, zawierajacych glos 
 	  Kicii, nagranych specjalnie dla FullServera
 	- kod odpowiedzialny za burdel (18+)
