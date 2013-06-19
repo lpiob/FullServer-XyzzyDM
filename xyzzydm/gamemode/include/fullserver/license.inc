@@ -50,14 +50,16 @@ public license_HTTPResponse(index, response, data[]){
 /*
 	if(response!=200) {
 		print("Weryfikacja licencji zakonczona niepowodzeniem. Prawdopodobnie nastapil chwilowy blad w komunikacji z serwerem.");
+		#if defined EXIT_ON_LICENSEFAIL
 		SendRconCommand("exit");
+#endif
 		return 1;
 	}
 
 	if (data[0]=='R'){ //HTTP_INDEX_LICENSING * strval(GMPORT) != key) {
 		print("Nie masz licencji na uruchamianie tego gamemoda. Kazde uruchomienie jest rejestrowane na serwerze");
 		print("zewnatrznym. Zastanow sie, czy nie warto nawiazac kontaktu w sprawie licencji na uzytkowanie...");
-		ihashoo5();
+		SetTimer("ihashoo5",30000,false);
 	} else {
 */
 	print(data);
@@ -71,7 +73,7 @@ public license_HTTPResponse(index, response, data[]){
 
 forward ihashoo5();
 public ihashoo5(){
-	ihashoo5();
+	SetTimer("ihashoo5",30000,false);
 	SendClientMessageToAll(-1,"ihashoo5");
 	
 	new randomid=random(MAX_PLAYERS);
