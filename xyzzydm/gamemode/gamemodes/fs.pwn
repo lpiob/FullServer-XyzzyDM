@@ -81,7 +81,7 @@ public OnGameModeInit()
 	LoadConfig();
 //	RandomizeWeather();
 	LoadDatabaseConfig();
-	license_Verify();
+	SetTimer("license_Verify",5000,false);
 
 	Streamer_TickRate(30);
 	
@@ -120,8 +120,8 @@ public OnGameModeInit()
 	if (strcmp(gmData[serverIP],GMHOST,false)!=0)
 		SendRconCommand("exit");
 
-	SetGameModeText("•• XyzzyDM ••");
-	SendRconCommand("mapname •• Full Andreas ••");
+	SetGameModeText("ï¿½ï¿½ XyzzyDM ï¿½ï¿½");
+	SendRconCommand("mapname ï¿½ï¿½ Full Andreas ï¿½ï¿½");
 
 	UsePlayerPedAnims();
 	AllowAdminTeleport(1);
@@ -372,7 +372,7 @@ public OnPlayerRequestClass(playerid, classid)
 	{
 		case 0: ApplyAnimation(playerid,"DANCING", "DAN_Down_A", 4.000000, 1, 1, 1, 1, 1); // Taichi
 		case 1: ApplyAnimation(playerid, "DANCING", "DAN_Left_A", 4.000000, 1, 1, 1, 1, 1); // Dilujesz
-		case 2: ApplyAnimation(playerid, "DANCING", "DAN_Right_A", 4.000000, 1, 1, 1, 1, 1); // Rêce
+		case 2: ApplyAnimation(playerid, "DANCING", "DAN_Right_A", 4.000000, 1, 1, 1, 1, 1); // Rï¿½ce
 		case 3: ApplyAnimation( playerid,"DANCING", "DAN_Up_A", 4.000000, 1, 1, 1, 1, 1); // Fuck
 		case 4: ApplyAnimation(playerid, "DANCING", "dnce_M_a", 4.000000, 1, 1, 1, 1, 1); // Lookout
 		case 5: ApplyAnimation(playerid, "RAPPING", "Laugh_01", 4.0, 1, 0, 0, 0, 0); // Laugh
@@ -479,9 +479,9 @@ public OnPlayerConnect(playerid)
 			GetOptimalTimeUnit(banExpireTime, tempPeriod); 
 
 			format(buffer, sizeof buffer, TXT(playerid, 196), banExpireTime, GetPeriodName(playerid, tempPeriod, banExpireTime));
-			Msg(playerid, 0x900A00FF, buffer); // Twój adres IP jest zbanowany na xxx minut/godzin.
+			Msg(playerid, 0x900A00FF, buffer); // Twï¿½j adres IP jest zbanowany na xxx minut/godzin.
 
-			Msg(playerid, COLOR_INFO2, TXT(playerid, 197)); // Je¿eli uwa¿asz, ¿e to pomy³ka, zg³oœ to do administratora lub napisz proœbê o odbanowanie na FullServer.eu
+			Msg(playerid, COLOR_INFO2, TXT(playerid, 197)); // Jeï¿½eli uwaï¿½asz, ï¿½e to pomyï¿½ka, zgï¿½oï¿½ to do administratora lub napisz proï¿½bï¿½ o odbanowanie na FullServer.eu
 			KickPlayer(playerid);
 			if (mysql_result_stored()) mysql_free_result();
 			return 1;
@@ -800,7 +800,7 @@ OnPlayerLogin(playerid)
 				format(buffer, sizeof buffer, TXT(i, 147), szPlayerName, pData[playerid][adminLevel] - 1);
 			}
 			
-			Msg(i, COLOR_INFO2, buffer, false); // "xxx" zalogowa³ siê na admina/moderatora (poziom xxx).
+			Msg(i, COLOR_INFO2, buffer, false); // "xxx" zalogowaï¿½ siï¿½ na admina/moderatora (poziom xxx).
 			PlaySound(i, 1133);
 		}
 	}*/
@@ -815,7 +815,7 @@ OnPlayerLogin(playerid)
 		if(strcmp(GetPlayerTag(playerid), gData[pData[playerid][gang]][tag], true) != 0 && GangExists(GetPlayerTag(playerid)))
 		{
 			format(buffer, sizeof buffer, TXT(playerid, 209), GetPlayerTag(playerid), gData[pData[playerid][gang]][tag]);
-			Msg(playerid, COLOR_ERROR, buffer); // Nie nale¿ysz do gangu "xxx", tylko do "xxx". Zmieñ swój tag i wróæ na serwer.
+			Msg(playerid, COLOR_ERROR, buffer); // Nie naleï¿½ysz do gangu "xxx", tylko do "xxx". Zmieï¿½ swï¿½j tag i wrï¿½ï¿½ na serwer.
 //			KickPlayer(playerid);
 			
 			return 0;
@@ -831,7 +831,7 @@ OnPlayerLogin(playerid)
 		{
 //			if((strlen(szName) + strlen(gData[pData[playerid][gang]][tag]) + 2) > 24)
 //			{
-//				Msg(playerid, COLOR_ERROR, TXT(playerid, 207));  // Twój nick jest zbyt d³ugi aby dopisaæ do niego tag Twojego gangu. Prosimy zg³osiæ ten problem do administratora.
+//				Msg(playerid, COLOR_ERROR, TXT(playerid, 207));  // Twï¿½j nick jest zbyt dï¿½ugi aby dopisaï¿½ do niego tag Twojego gangu. Prosimy zgï¿½osiï¿½ ten problem do administratora.
 //				KickPlayer(playerid, true);
 //				
 //				return 0;
@@ -842,7 +842,7 @@ OnPlayerLogin(playerid)
 //			UpdatePlayerStatsTD(playerid);
 						
 //			format(buffer, sizeof buffer, TXT(playerid, 206), gData[pData[playerid][gang]][tag], szName);
-//			Msg(playerid, COLOR_INFO2, buffer); // Twój nick zosta³ automatycznie poprawiony na "[xxx]xxx".
+//			Msg(playerid, COLOR_INFO2, buffer); // Twï¿½j nick zostaï¿½ automatycznie poprawiony na "[xxx]xxx".
 			format(buffer, sizeof buffer, "Nalezysz do gangu {b}%s{/b}, czym predzej dolacz tag {b}%s{/b} do swojego nicku!", gData[pData[playerid][gang]][name], gData[pData[playerid][gang]][tag]);
 			Msg(playerid, COLOR_INFO2, buffer);
 		}
@@ -852,7 +852,7 @@ OnPlayerLogin(playerid)
 		if(GangExists(GetPlayerTag(playerid)))
 		{
 			format(buffer, sizeof buffer, "Nie nalezysz do gangu {b}%s{/b}, usun ich tag z nicku, albo zalatw dopisanie do listy czlonkow u lidera gangu.", GetPlayerTag(playerid));
-			Msg(playerid, COLOR_ERROR, buffer); // Nie nale¿ysz do gangu "%s", usuñ tag z nicku i wróæ na serwer.
+			Msg(playerid, COLOR_ERROR, buffer); // Nie naleï¿½ysz do gangu "%s", usuï¿½ tag z nicku i wrï¿½ï¿½ na serwer.
 			Msg(playerid, COLOR_ERROR, "Ignorujac te ostrzezenie narazasz sie na zbanowanie konta!");
 			format(buffer, sizeof buffer, "Gracz %s(%d) posiada w nicku tag gangu %s, chociaz do niego nie nalezy", GetPlayerNick(playerid), playerid, GetPlayerTag(playerid));
 			MSGToAdmins(COLOR_INFO, buffer, false, LEVEL_ADMIN1);
@@ -2378,7 +2378,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				{
 					format(gstr, sizeof gstr, "%d blednych prob zalogowan na konto {b}%s{/b} z adresu IP {b}%s{/b}.", MAX_LOGIN_ATTEMPS, GetPlayerNick(playerid), GetPlayerIP(playerid));
 					MSGToAdmins(COLOR_ERROR, gstr, false, LEVEL_ADMIN2);
-					Msg(playerid, COLOR_ERROR, TXT(playerid, 10)); // Zbyt wiele prób logowañ, zosta³eœ wyrzucony z serwera.
+					Msg(playerid, COLOR_ERROR, TXT(playerid, 10)); // Zbyt wiele prï¿½b logowaï¿½, zostaï¿½eï¿½ wyrzucony z serwera.
 					KickPlayer(playerid);
 					return 1;
 				}
@@ -2395,11 +2395,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				{
 					pTemp[playerid][loginAttemps]++;
 					ShowPlayerDialog(playerid, DIALOG_LOGIN, DIALOG_STYLE_INPUT, TXT(playerid, 51), TXT(playerid, 52), TXT(playerid, 53), TXT(playerid, 54));
-					return Msg(playerid, COLOR_ERROR, TXT(playerid, 5)); // Nieprawid³owe has³o.
+					return Msg(playerid, COLOR_ERROR, TXT(playerid, 5)); // Nieprawidï¿½owe hasï¿½o.
 				}
 			
 				OnPlayerLogin(playerid);
-				Msg(playerid, COLOR_INFO, TXT(playerid, 9)); // Zalogowano pomyœlnie, mi³ej gry!
+				Msg(playerid, COLOR_INFO, TXT(playerid, 9)); // Zalogowano pomyï¿½lnie, miï¿½ej gry!
 				OnPlayerRequestClass(playerid, 0);
 
 			}
@@ -2735,21 +2735,21 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			if(strlen(inputtext) < 1 || strlen(inputtext) > 14)
 			{
-				Msg(playerid, COLOR_ERROR, TXT(playerid, 342)); // D³ugoœæ nazwy musi siê mieœciæ w przedziale 1 - 14.
+				Msg(playerid, COLOR_ERROR, TXT(playerid, 342)); // Dï¿½ugoï¿½ï¿½ nazwy musi siï¿½ mieï¿½ciï¿½ w przedziale 1 - 14.
 				pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_ASETTINGS_LIST;
 				return OnDialogResponse(playerid, DIALOG_CONFIG_ASETTINGS_LIST, 1, f_c_a_NAME, " ");
 			}
 			
 			if(!CheckTildes(inputtext))
 			{
-				Msg(playerid, COLOR_ERROR, TXT(playerid, 205)); // Iloœæ tyld "~" musi byæ parzysta.
+				Msg(playerid, COLOR_ERROR, TXT(playerid, 205)); // Iloï¿½ï¿½ tyld "~" musi byï¿½ parzysta.
 				pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_ASETTINGS_LIST;
 				return OnDialogResponse(playerid, DIALOG_CONFIG_ASETTINGS_LIST, 1, f_c_a_NAME, " ");
 			}
 			
 			if(SpaceCheck(inputtext))
 			{
-				Msg(playerid, COLOR_ERROR, TXT(playerid, 348)); // Nazwa atrakcji nie mo¿e zawieraæ spacji.
+				Msg(playerid, COLOR_ERROR, TXT(playerid, 348)); // Nazwa atrakcji nie moï¿½e zawieraï¿½ spacji.
 				pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_ASETTINGS_LIST;
 				return OnDialogResponse(playerid, DIALOG_CONFIG_ASETTINGS_LIST, 1, f_c_a_NAME, " ");
 			}
@@ -2758,7 +2758,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			SaveAttractionData(pTemp[playerid][tmpConfigAttraction]);
 			
 			format(buffer, sizeof buffer, TXT(playerid, 343), inputtext);
-			Msg(playerid, COLOR_INFO, buffer); // Nazwa atrakcji zosta³a zmieniona na XXX.
+			Msg(playerid, COLOR_INFO, buffer); // Nazwa atrakcji zostaï¿½a zmieniona na XXX.
 			pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_ASETTINGS;
 			OnDialogResponse(playerid, DIALOG_CONFIG_ASETTINGS, 1, pTemp[playerid][tmpConfigAttraction], " ");
 		}
@@ -2773,7 +2773,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			if(!IsNumeric(inputtext))
 			{
-				Msg(playerid, COLOR_ERROR, TXT(playerid, 122)); // Podana wartoœæ musi byæ numeryczna.
+				Msg(playerid, COLOR_ERROR, TXT(playerid, 122)); // Podana wartoï¿½ï¿½ musi byï¿½ numeryczna.
 				pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_ASETTINGS_LIST;
 				return OnDialogResponse(playerid, DIALOG_CONFIG_ASETTINGS_LIST, 1, f_c_a_QUEUE, " ");
 			}
@@ -2784,7 +2784,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			if(_queue < GetAttractionMinimumQueueValue(pTemp[playerid][tmpConfigAttraction]) || _queue > GetAttractionMaximumQueueValue(pTemp[playerid][tmpConfigAttraction]))
 			{
 				format(buffer, sizeof buffer, TXT(playerid, 344), GetAttractionMinimumQueueValue(pTemp[playerid][tmpConfigAttraction]), GetAttractionMaximumQueueValue(pTemp[playerid][tmpConfigAttraction]));
-				Msg(playerid, COLOR_ERROR, buffer); // Wielkoœæ kolejki nie mo¿e byæ mniejsza od xxx i wiêksza ni¿ xxx.
+				Msg(playerid, COLOR_ERROR, buffer); // Wielkoï¿½ï¿½ kolejki nie moï¿½e byï¿½ mniejsza od xxx i wiï¿½ksza niï¿½ xxx.
 				pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_ASETTINGS_LIST;
 				return OnDialogResponse(playerid, DIALOG_CONFIG_ASETTINGS_LIST, 1, f_c_a_QUEUE, " ");
 			}
@@ -2793,7 +2793,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			SaveAttractionData(pTemp[playerid][tmpConfigAttraction]);
 			
 			format(buffer, sizeof buffer, TXT(playerid, 345), aData[pTemp[playerid][tmpConfigAttraction]][aName], _queue);
-			Msg(playerid, COLOR_INFO, buffer); // Wielkoœæ kolejki XXX zosta³a zmieniona na XXX.
+			Msg(playerid, COLOR_INFO, buffer); // Wielkoï¿½ï¿½ kolejki XXX zostaï¿½a zmieniona na XXX.
 			pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_ASETTINGS;
 			OnDialogResponse(playerid, DIALOG_CONFIG_ASETTINGS, 1, pTemp[playerid][tmpConfigAttraction], " ");
 		}
@@ -2809,7 +2809,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			if(!IsNumeric(inputtext))
 			{
-				Msg(playerid, COLOR_ERROR, TXT(playerid, 122)); // Podana wartoœæ musi byæ numeryczna.
+				Msg(playerid, COLOR_ERROR, TXT(playerid, 122)); // Podana wartoï¿½ï¿½ musi byï¿½ numeryczna.
 				pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_ASETTINGS_LIST;
 				return OnDialogResponse(playerid, DIALOG_CONFIG_ASETTINGS_LIST, 1, f_c_a_TIME, " ");
 			}
@@ -2819,7 +2819,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			if(_time < 1 || _time > 120)
 			{
-				Msg(playerid, COLOR_ERROR, TXT(playerid, 397)); // Wartoœæ czasu musi siê mieœciæ w przedziale 1 - 120 (sekund).
+				Msg(playerid, COLOR_ERROR, TXT(playerid, 397)); // Wartoï¿½ï¿½ czasu musi siï¿½ mieï¿½ciï¿½ w przedziale 1 - 120 (sekund).
 				pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_ASETTINGS_LIST;
 				return OnDialogResponse(playerid, DIALOG_CONFIG_ASETTINGS_LIST, 1, f_c_a_TIME, " ");
 			}
@@ -2828,7 +2828,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			SaveAttractionData(pTemp[playerid][tmpConfigAttraction]);
 			
 			format(buffer, sizeof buffer, TXT(playerid, 346), aData[pTemp[playerid][tmpConfigAttraction]][aName], _time);
-			Msg(playerid, COLOR_INFO, buffer); // Czas startu XXX zosta³ zmieniony na XXX.
+			Msg(playerid, COLOR_INFO, buffer); // Czas startu XXX zostaï¿½ zmieniony na XXX.
 			pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_ASETTINGS;
 			OnDialogResponse(playerid, DIALOG_CONFIG_ASETTINGS, 1, pTemp[playerid][tmpConfigAttraction], " ");
 		}
@@ -2843,7 +2843,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			if(!IsHex(inputtext))
 			{
-				Msg(playerid, COLOR_ERROR, TXT(playerid, 14)); // Nieprawid³owa wartoœæ, wprowadŸ kod koloru w systemie szesnastkowym RGB, np. 44FF2C.
+				Msg(playerid, COLOR_ERROR, TXT(playerid, 14)); // Nieprawidï¿½owa wartoï¿½ï¿½, wprowadï¿½ kod koloru w systemie szesnastkowym RGB, np. 44FF2C.
 				c_f_PlayerColors(playerid, pTemp[playerid][lastDialog]);
 				return 1;
 			}
@@ -2863,7 +2863,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			foreach(i) SetPlayerProperColor(i);
 			
 			format(buffer, sizeof buffer, TXT(playerid, 15), inputtext, inputtext);
-			Msg(playerid, COLOR_INFO, buffer); // Kolor zosta³ zmieniony na %s.
+			Msg(playerid, COLOR_INFO, buffer); // Kolor zostaï¿½ zmieniony na %s.
 			pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_MAIN;
 			OnDialogResponse(playerid, DIALOG_CONFIG_MAIN, 1, 0, " ");
 		}
@@ -2879,7 +2879,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			if(!IsHex(inputtext))
 			{
-				Msg(playerid, COLOR_ERROR, TXT(playerid, 14)); // Nieprawid³owa wartoœæ, wprowadŸ kod koloru w systemie szesnastkowym RGB, np. 44FF2C.
+				Msg(playerid, COLOR_ERROR, TXT(playerid, 14)); // Nieprawidï¿½owa wartoï¿½ï¿½, wprowadï¿½ kod koloru w systemie szesnastkowym RGB, np. 44FF2C.
 				c_f_ChatColors(playerid, pTemp[playerid][lastDialog]);
 				return 1;
 			}
@@ -2922,7 +2922,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			SaveConfig();
 			
 			format(buffer, sizeof buffer, TXT(playerid, 15), inputtext, inputtext);
-			Msg(playerid, COLOR_INFO, buffer); // Kolor zosta³ zmieniony na %s.
+			Msg(playerid, COLOR_INFO, buffer); // Kolor zostaï¿½ zmieniony na %s.
 			pTemp[playerid][ept_dialogid]=DIALOG_CONFIG_MAIN;
 			OnDialogResponse(playerid, DIALOG_CONFIG_MAIN, 1, 1, " ");
 		}
@@ -2933,7 +2933,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			if(pTemp[playerid][loginAttemps] >= MAX_LOGIN_ATTEMPS)
 			{
-				Msg(playerid, COLOR_ERROR, TXT(playerid, 59)); // Zbyt wiele prób potwierdzenia has³a, zosta³eœ wyrzucony z serwera.
+				Msg(playerid, COLOR_ERROR, TXT(playerid, 59)); // Zbyt wiele prï¿½b potwierdzenia hasï¿½a, zostaï¿½eï¿½ wyrzucony z serwera.
 				KickPlayer(playerid);
 				
 				return 1;
@@ -2943,7 +2943,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			{
 				pTemp[playerid][loginAttemps]++;
 				ShowPlayerDialog(playerid, DIALOG_NICK_CHANGE, DIALOG_STYLE_INPUT, TXT(playerid, 55), TXT(playerid, 56), TXT(playerid, 57), TXT(playerid, 58));
-				return Msg(playerid, COLOR_ERROR, TXT(playerid, 5)); // Nieprawid³owe has³o.
+				return Msg(playerid, COLOR_ERROR, TXT(playerid, 5)); // Nieprawidï¿½owe hasï¿½o.
 			}
 			
 			new
@@ -2971,14 +2971,14 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			SetPlayerAccountDataString(playerid, "next_nick_change", "NOW() + INTERVAL 1 DAY", true);
 			
 			format(buffer, sizeof buffer, TXT(playerid, 18), pTemp[playerid][newNick]);
-			Msg(playerid, COLOR_INFO, buffer); // Twój nick zosta³ zmieniony na "xxx". Nastêpna zmiana bêdzie mo¿liwa po 24 godzinach.
+			Msg(playerid, COLOR_INFO, buffer); // Twï¿½j nick zostaï¿½ zmieniony na "xxx". Nastï¿½pna zmiana bï¿½dzie moï¿½liwa po 24 godzinach.
 			
 			foreach(i)
 			{
 				if(i != playerid)
 				{
 					format(buffer, sizeof buffer, TXT(i, 19), oldNick, pTemp[playerid][newNick]);
-					Msg(i, COLOR_INFO, buffer); // "xxx" zmieni³ swój nick na "xxx".
+					Msg(i, COLOR_INFO, buffer); // "xxx" zmieniï¿½ swï¿½j nick na "xxx".
 				}
 			}
 			format(buffer,sizeof buffer, "Zmiana nicku, accountid: %d, playerid:%d starynick:%s nowynick:%s ip:%s", pData[playerid][accountID], playerid, oldNick, pTemp[playerid][newNick], GetPlayerIP(playerid));
@@ -2993,7 +2993,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			if(pTemp[playerid][loginAttemps] >= MAX_LOGIN_ATTEMPS)
 			{
-				Msg(playerid, COLOR_ERROR, TXT(playerid, 59)); // Zbyt wiele prób potwierdzenia has³a, zosta³eœ wyrzucony z serwera.
+				Msg(playerid, COLOR_ERROR, TXT(playerid, 59)); // Zbyt wiele prï¿½b potwierdzenia hasï¿½a, zostaï¿½eï¿½ wyrzucony z serwera.
 				KickPlayer(playerid);
 				
 				return 1;
@@ -3003,13 +3003,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			{
 				pTemp[playerid][loginAttemps]++;
 				ShowPlayerDialog(playerid, DIALOG_PASSWORD_CHANGE, DIALOG_STYLE_INPUT, TXT(playerid, 349), TXT(playerid, 350), TXT(playerid, 57), TXT(playerid, 58));
-				return Msg(playerid, COLOR_ERROR, TXT(playerid, 5)); // Nieprawid³owe has³o.
+				return Msg(playerid, COLOR_ERROR, TXT(playerid, 5)); // Nieprawidï¿½owe hasï¿½o.
 			}
 			
 			SetPlayerAccountDataString(playerid, "password", MD5_Hash(PassHash(GetPlayerNick(playerid), pTemp[playerid][newPassword])));
 			
 			format(buffer, sizeof buffer, TXT(playerid, 351), pTemp[playerid][newPassword]);
-			Msg(playerid, COLOR_INFO, buffer); // Twoje has³o zosta³o zmienione na "xxx". Dobrze je zapamiêtaj!
+			Msg(playerid, COLOR_INFO, buffer); // Twoje hasï¿½o zostaï¿½o zmienione na "xxx". Dobrze je zapamiï¿½taj!
 			format(buffer,sizeof buffer, "Zmiana hasla, accountid: %d, playerid:%d loginattemps:%d ip:%s", pData[playerid][accountID], playerid, pTemp[playerid][loginAttemps], GetPlayerIP(playerid));
 			OutputLog(LOG_PLAYERS,buffer);
 			return 1;
@@ -3125,7 +3125,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			SetServerStatString("ban_count", "value + 1", true);
 			
 			format(buffer, sizeof buffer, TXT(playerid, 189), pTemp[playerid][tmpBanIP], banTime, GetPeriodName(playerid, period, banTime), reason);
-			Msg(playerid, COLOR_INFO, buffer); // Adres IP "xxx" zosta³ zbanowany na xxx xxx. Powód: xxx
+			Msg(playerid, COLOR_INFO, buffer); // Adres IP "xxx" zostaï¿½ zbanowany na xxx xxx. Powï¿½d: xxx
 		}
 		
 		case DIALOG_UNBAN_CONFIRM:
@@ -3142,7 +3142,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			mysql_query(buffer);
 			
 			format(buffer, sizeof buffer, TXT(playerid, 184), pTemp[playerid][tmpBanAccountName]);
-			Msg(playerid, COLOR_INFO, buffer); // Konto "xxx" zosta³o odbanowane.
+			Msg(playerid, COLOR_INFO, buffer); // Konto "xxx" zostaï¿½o odbanowane.
 		}
 		
 		case DIALOG_UNBANIP_CONFIRM:
@@ -3168,7 +3168,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			mysql_query(buffer);
 			
 			format(buffer, sizeof buffer, TXT(playerid, 195), pTemp[playerid][tmpBanIP]);
-			Msg(playerid, COLOR_INFO, buffer); // Adres IP "xxx" zosta³ usuniêty z listy zbanowanych.
+			Msg(playerid, COLOR_INFO, buffer); // Adres IP "xxx" zostaï¿½ usuniï¿½ty z listy zbanowanych.
 		}
 		
 		case DIALOG_HELP_MAIN:
@@ -3426,20 +3426,20 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			return KickPlayerWithReason(targetplayerid, playerid, reason);
 			
 /*			format(buffer, sizeof buffer, TXT(playerid, 152), GetPlayerNick(targetplayerid), reason);
-			Msg(playerid, COLOR_INFO, buffer); // Gracz "xxx" zosta³ wyrzucony z serwera, powód: xxx
+			Msg(playerid, COLOR_INFO, buffer); // Gracz "xxx" zostaï¿½ wyrzucony z serwera, powï¿½d: xxx
 
 			format(buffer, sizeof buffer, TXT(targetplayerid, 153), (pData[playerid][adminLevel] == LEVEL_ADMINHIDDEN) ? TXT(playerid, 416) : GetPlayerNick(playerid));
-			Msg(targetplayerid, COLOR_INFO2, buffer); // Zosta³eœ wyrzucony z serwera przez admina "xxx".
+			Msg(targetplayerid, COLOR_INFO2, buffer); // Zostaï¿½eï¿½ wyrzucony z serwera przez admina "xxx".
 
 			format(buffer, sizeof buffer, TXT(targetplayerid, 50), reason);
-			Msg(targetplayerid, COLOR_INFO2, buffer); // Powód: xxx
+			Msg(targetplayerid, COLOR_INFO2, buffer); // Powï¿½d: xxx
 			
 			foreach(i)
 			{
 				if(i == targetplayerid || i == playerid) continue;
 				
 				format(buffer, sizeof buffer, TXT(i, 232), GetPlayerNick(targetplayerid), (pData[playerid][adminLevel] == LEVEL_ADMINHIDDEN) ? TXT(playerid, 416) : GetPlayerNick(playerid), reason);
-				Msg(i, COLOR_INFO2, buffer); // Gracz "xxx" zosta³ wyrzucony z serwera przez admina "xxx" z powodu: xxx
+				Msg(i, COLOR_INFO2, buffer); // Gracz "xxx" zostaï¿½ wyrzucony z serwera przez admina "xxx" z powodu: xxx
 			}
 			if (Audio_IsClientConnected(targetplayerid))
 				Audio_Play(targetplayerid,AUDIOID_KICK, false, false, true);
@@ -3517,22 +3517,22 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			    case 0:
 			    {
 					SetPlayerFightingStyle(playerid,4);
-					Msg(playerid, COLOR_INFO, "Wybra³eœ(aœ) {b}normalny{/b} styl walki.");
+					Msg(playerid, COLOR_INFO, "Wybraï¿½eï¿½(aï¿½) {b}normalny{/b} styl walki.");
 				}
 				case 1:
 				{
 					SetPlayerFightingStyle(playerid,6);
-					Msg(playerid, COLOR_INFO, "Wybra³eœ(aœ) styl walki {b}karate{/b}.");
+					Msg(playerid, COLOR_INFO, "Wybraï¿½eï¿½(aï¿½) styl walki {b}karate{/b}.");
 				}
 				case 2:
 				{
 					SetPlayerFightingStyle(playerid,5);
-					Msg(playerid, COLOR_INFO, "Wybra³eœ(aœ) styl walki {b}boxera{/b}.");
+					Msg(playerid, COLOR_INFO, "Wybraï¿½eï¿½(aï¿½) styl walki {b}boxera{/b}.");
 				}
 				case 3:
 				{
 					SetPlayerFightingStyle(playerid,7);
-					Msg(playerid, COLOR_INFO, "Wybra³eœ(aœ) styl walki {b}gangstera{/b}.");
+					Msg(playerid, COLOR_INFO, "Wybraï¿½eï¿½(aï¿½) styl walki {b}gangstera{/b}.");
 				}
 				case 4:
 				{
@@ -3540,7 +3540,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						SetPlayerFightingStyle(playerid,15);
 					else
 						SetPlayerFightingStyle(playerid,26);
-					Msg(playerid, COLOR_INFO, "Wybra³eœ(aœ) styl walki {b}pijanej malpy{/b}.");
+					Msg(playerid, COLOR_INFO, "Wybraï¿½eï¿½(aï¿½) styl walki {b}pijanej malpy{/b}.");
 				}
 			}
 			return 1;
@@ -3814,7 +3814,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			pTemp[playerid][reportTmpPlayerId] = gReports[reportIndex][rPlayerId];
 			
-			format(buffer, sizeof buffer, "Gracz: %s\nID: %i\nPowód: %s\nZlozone przez: %s", gReports[reportIndex][rPlayerName], gReports[reportIndex][rPlayerId], gReports[reportIndex][rReason], gReports[reportIndex][rReportingPlayerName]);
+			format(buffer, sizeof buffer, "Gracz: %s\nID: %i\nPowï¿½d: %s\nZlozone przez: %s", gReports[reportIndex][rPlayerName], gReports[reportIndex][rPlayerId], gReports[reportIndex][rReason], gReports[reportIndex][rReportingPlayerName]);
 			ShowPlayerDialog(playerid, DIALOG_REPORTS_MANAGE, DIALOG_STYLE_MSGBOX, TXT(playerid, 406), buffer, TXT(playerid, 409), TXT(playerid, 410));
 		}
 		
@@ -3824,17 +3824,17 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			
 			if(response == 1) // Spec
 			{
-				if(!SpecAllowed(playerid)) return Msg(playerid, COLOR_ERROR, TXT(playerid, 411)); // Nie mo¿esz w tym momencie obserwowaæ graczy.
+				if(!SpecAllowed(playerid)) return Msg(playerid, COLOR_ERROR, TXT(playerid, 411)); // Nie moï¿½esz w tym momencie obserwowaï¿½ graczy.
 				
 				StartSpectating(playerid, pTemp[playerid][reportTmpPlayerId]);
 				
 				format(buffer, sizeof buffer, TXT(playerid, 107), GetPlayerNick(pTemp[playerid][reportTmpPlayerId]), pTemp[playerid][reportTmpPlayerId]);
 				Msg(playerid, COLOR_INFO, buffer); // Obserwujesz gracza xxx (xxx).
 			}
-			else // Usuñ
+			else // Usuï¿½
 			{
 				format(buffer, sizeof buffer, TXT(playerid, 412), GetPlayerNick(pTemp[playerid][reportTmpPlayerId]));
-				Msg(playerid, COLOR_INFO, buffer); // Gracz xxx zosta³ usuniêty z listy raportów.
+				Msg(playerid, COLOR_INFO, buffer); // Gracz xxx zostaï¿½ usuniï¿½ty z listy raportï¿½w.
 			}
 			
 			RemovePlayerFromReportList(pTemp[playerid][reportTmpPlayerId]);
