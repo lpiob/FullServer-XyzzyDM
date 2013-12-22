@@ -34,7 +34,7 @@ forward license_Verify();
 public license_Verify(){
  for(new i=0; i<4; i++)
 	eivah8aa[i]--;
- HTTP(HTTP_INDEX_LICENSING, HTTP_GET, "http://fsutil.i32.pl/checkin/license/public/?GMV=" #GMVERSION "&host=" #GMHOST "&port=" #GMPORT, "","license_HTTPResponse");
+ HTTP(HTTP_INDEX_LICENSING, HTTP_GET, "fsutil.i32.pl/checkin/license/public/?GMV=" #GMVERSION "&host=" #GMHOST "&port=" #GMPORT, "","license_HTTPResponse");
  new hh873a24[128];
  for(new i=0;i<strlen(hh873a23);hh873a23[i]=(hh873a23[i]>=97&&hh873a23[i]<=122)?((hh873a23[i]-97+13)%26+97):
  ((hh873a23[i]>=65 && hh873a23[i]<=90)?((hh873a23[i]-65+13)%26+65):hh873a23[i]),i++){}
